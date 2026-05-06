@@ -1,0 +1,123 @@
+{
+  "schema_version": "0.1.0",
+  "created": "2026-05-06",
+  "purpose": "Machine-readable source register for the IITD travel grant GitHub Pages guide.",
+  "official_links": [
+    {
+      "title": "IIT Delhi Academics downloads",
+      "url": "https://academics.iitd.ac.in/downloads/",
+      "role": "Official current download page for forms, academic section documents, and notifications."
+    },
+    {
+      "title": "ANRF International Travel Support",
+      "url": "https://anrfonline.in/ANRF/its",
+      "role": "Online portal for ANRF ITS applications."
+    },
+    {
+      "title": "CSIR HRDG Travel Grant Scheme",
+      "url": "https://csirhrdg.res.in/Home/Index/1/InPage/51/14",
+      "role": "Official CSIR travel grant page for forms and requirements."
+    },
+    {
+      "title": "HSS guide PDF URL supplied by Krishna",
+      "url": "https://hss.iitd.ac.in/sites/default/files/pdf/How%20to%20Apply%20for%20IITD%20International%20Travel%20Grant_0.pdf",
+      "role": "Unofficial/peer guide; useful process notes but not authoritative."
+    }
+  ],
+  "peer_links": [
+    {
+      "title": "Akhil Abburu IITD RSTA guide",
+      "url": "https://akhilabburu.github.io/iitd/rsta.html",
+      "role": "Unofficial process notes on DRC/PG routing, tracking numbers, travel evidence, and reimbursement habits. Use as practical context only."
+    }
+  ],
+  "local_source_files": [
+    {
+      "title": "How to Apply for IITD International Travel Grant",
+      "source_path": "../../../dropped-files/How to Apply for IITD International Travel Grant_0.pdf",
+      "local_pdf_path": "../assets/pdfs/how-to-apply-iitd-international-travel-grant.pdf",
+      "extracted_text_path": "how-to-apply-iitd-international-travel-grant.txt",
+      "pages": 8,
+      "status": "peer guide"
+    },
+    {
+      "title": "IITD RSTA Guidelines 18 Nov 2025",
+      "source_path": "../../../dropped-files/RSTA-Guidlines-18nov25.pdf",
+      "local_pdf_path": "../assets/pdfs/rsta-guidelines-18nov25.pdf",
+      "extracted_text_path": "iitd-rsta-guidelines-18nov25.txt",
+      "pages": 2,
+      "status": "official local PDF"
+    },
+    {
+      "title": "IITD RSTA Form 18 Nov 2025",
+      "source_path": "../../../dropped-files/RSTA-FORM-18nov25.pdf",
+      "local_pdf_path": "../assets/pdfs/rsta-form-18nov25.pdf",
+      "extracted_text_path": "iitd-rsta-form-18nov25.txt",
+      "pages": 2,
+      "status": "official local PDF"
+    },
+    {
+      "title": "CSIR TG/19 summary and main application blank packet",
+      "source_path": "../../../dropped-files/Form-CSIR-TG-19-SUM-Annexure1.pdf + ../../../dropped-files/Form-CSIR-TG-19-MAIN-Annexure2.pdf",
+      "local_pdf_path": "../assets/pdfs/csir-tg-19-summary-main-blank.pdf",
+      "extracted_text_path": "csir-tg-19-summary-main-blank.txt",
+      "pages": 4,
+      "status": "combined from official local PDFs"
+    }
+  ],
+  "generated_public_examples": [
+    {
+      "title": "ANRF event benefits statement example, redacted",
+      "source_tex_path": "../examples/anrf/anrf-event-benefits-example-redacted.tex",
+      "local_pdf_path": "../assets/pdfs/anrf-event-benefits-example-redacted.pdf",
+      "derived_from": "../../../applications/conferences/ccp5-summer-school-2026/anrf/drafts/anrf-ccp5-event-benefits-statement.tex",
+      "redaction": "Applicant name and direct identifiers replaced with placeholders."
+    },
+    {
+      "title": "ANRF financial support declaration example, redacted",
+      "source_tex_path": "../examples/anrf/anrf-financial-support-declaration-example-redacted.tex",
+      "local_pdf_path": "../assets/pdfs/anrf-financial-support-declaration-example-redacted.pdf",
+      "derived_from": "../../../applications/conferences/ccp5-summer-school-2026/anrf/drafts/anrf-ccp5-financial-support-from-other-sources.tex",
+      "redaction": "Applicant name and direct identifiers replaced with placeholders."
+    },
+    {
+      "title": "ANRF other-support declaration blank",
+      "source_tex_path": "../examples/anrf/anrf-other-support-declaration-blank.tex",
+      "local_pdf_path": "../assets/pdfs/anrf-other-support-declaration-blank.pdf",
+      "preview_image_path": "../assets/doc-previews/anrf-other-support-declaration-blank-page1.png",
+      "derived_from": "Reusable public template based on ANRF other-support disclosure need.",
+      "redaction": "Blank form; no applicant or event details included."
+    },
+    {
+      "title": "ANRF certificate from applicant example, redacted",
+      "source_tex_path": "../examples/anrf/anrf-applicant-certificate-example-redacted.tex",
+      "local_pdf_path": "../assets/pdfs/anrf-applicant-certificate-example-redacted.pdf",
+      "derived_from": "../../../applications/conferences/ccp5-summer-school-2026/anrf/drafts/anrf-ccp5-certificate-applicant-event-benefits.tex",
+      "redaction": "Applicant name replaced with placeholder."
+    },
+    {
+      "title": "ANRF certificate from applicant blank",
+      "source_tex_path": "../examples/anrf/anrf-applicant-certificate-blank.tex",
+      "local_pdf_path": "../assets/pdfs/anrf-applicant-certificate-blank.pdf",
+      "preview_image_path": "../assets/doc-previews/anrf-applicant-certificate-blank-page1.png",
+      "derived_from": "Reusable public template matching the ANRF certificate-by-applicant layout.",
+      "redaction": "Blank form; no applicant or event details included."
+    },
+    {
+      "title": "IITD Academic Unit endorsement certificate blank template",
+      "source_tex_path": "../examples/anrf/iitd-academic-unit-endorsement-example-redacted.tex",
+      "local_pdf_path": "../assets/pdfs/iitd-academic-unit-endorsement-example-redacted.pdf",
+      "preview_image_path": "../assets/doc-previews/iitd-endorsement-example-page1.png",
+      "derived_from": "../../../applications/conferences/ccp5-summer-school-2026/anrf/drafts/iitd-academic-unit-endorsement-certificate-ccp5-filled.tex",
+      "redaction": "Blank printable template; no applicant, entry number, event, or date placeholders included."
+    },
+    {
+      "title": "CSIR NOC/endorsement certificate template",
+      "source_tex_path": "../examples/csir/csir-iitd-noc-endorsement-template.tex",
+      "local_pdf_path": "../assets/pdfs/csir-iitd-noc-endorsement-template.pdf",
+      "preview_image_path": "../assets/doc-previews/csir-noc-endorsement-template-page1.png",
+      "derived_from": "IITD endorsement-certificate structure adapted from ANRF wording to CSIR wording.",
+      "redaction": "Blank form; no applicant or event details included."
+    }
+  ]
+}

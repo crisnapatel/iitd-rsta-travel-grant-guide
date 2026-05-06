@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IIT Delhi RSTA Travel Grant Field Guide</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect x='4' y='4' width='40' height='40' rx='7' fill='white' stroke='%2317211f' stroke-width='4'/%3E%3Ctext x='24' y='29' text-anchor='middle' font-family='Arial' font-size='12' font-weight='700' fill='%232f7b68'%3ERSTA%3C/text%3E%3C/svg%3E">
+    <meta
+      name="description"
+      content="A practical canvas guide for IIT Delhi PhD students applying for RSTA, ANRF ITS, CSIR travel grant, Ex-India leave, and reimbursement."
+    >
+    <link rel="stylesheet" href="styles.css?v=20260506k">
+  </head>
+  <body>
+    <header class="topbar" aria-label="Guide controls">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">RSTA</span>
+        <div>
+          <h1>IITD international travel grant guide</h1>
+          <p>RSTA, external grants, leave, travel evidence, reimbursement</p>
+        </div>
+      </div>
+
+      <div class="search-wrap">
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M10.8 18.1a7.3 7.3 0 1 1 0-14.6 7.3 7.3 0 0 1 0 14.6Zm0-2a5.3 5.3 0 1 0 0-10.6 5.3 5.3 0 0 0 0 10.6Zm5.4.6 4.1 4.1-1.5 1.4-4.1-4.1 1.5-1.4Z"/>
+        </svg>
+        <input id="search" type="search" placeholder="Search forms, approvals, reimbursement..." autocomplete="off">
+      </div>
+
+      <nav class="jump-nav" aria-label="Jump to a canvas area">
+        <button type="button" data-focus="start">Start</button>
+        <button type="button" data-focus="external">External grants</button>
+        <button type="button" data-focus="iitd">IITD packet</button>
+        <button type="button" data-focus="travel">Travel</button>
+        <button type="button" data-focus="claim">Claim</button>
+      </nav>
+
+      <div class="control-group" aria-label="Canvas zoom controls">
+        <button type="button" class="icon-button" data-action="zoom-out" aria-label="Zoom out" title="Zoom out">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 11h14v2H5z"/></svg>
+        </button>
+        <button type="button" class="icon-button" data-action="zoom-in" aria-label="Zoom in" title="Zoom in">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M11 5h2v6h6v2h-6v6h-2v-6H5v-2h6z"/></svg>
+        </button>
+        <button type="button" class="icon-button" data-action="fit" aria-label="Fit canvas" title="Fit canvas">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h7v2H7.4l4.1 4.1-1.4 1.4L6 7.4V11H4V4Zm9 0h7v7h-2V7.4l-4.1 4.1-1.4-1.4L16.6 6H13V4ZM4 13h2v3.6l4.1-4.1 1.4 1.4L7.4 18H11v2H4v-7Zm14 0h2v7h-7v-2h3.6l-4.1-4.1 1.4-1.4 4.1 4.1V13Z"/></svg>
+        </button>
+        <button type="button" class="icon-button" data-action="toggle-checklist" aria-label="Toggle checklist" aria-controls="sidePanel" aria-expanded="false" title="Toggle checklist">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 3h12a2 2 0 0 1 2 2v16H4V5a2 2 0 0 1 2-2Zm0 2v14h12V5H6Zm9.2 3.3 1.4 1.4-4.8 4.8-2.4-2.4 1.4-1.4 1 1 3.4-3.4ZM8 8h3v2H8V8Zm0 7h8v2H8v-2Z"/></svg>
+        </button>
+        <button type="button" class="icon-button" data-action="reset-layout" aria-label="Reset card layout" title="Reset card layout">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5a7 7 0 1 1-6.3 4H3.5A9 9 0 1 0 12 3V0L7 4l5 4V5Z"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="app-shell">
+      <section id="viewport" class="viewport" aria-label="Pan and zoom canvas">
+        <div id="world" class="world">
+          <svg id="edgeLayer" class="edges" viewBox="0 0 4300 2300" aria-hidden="true"></svg>
+          <div id="nodeLayer" class="node-layer"></div>
+        </div>
+      </section>
+
+      <aside id="sidePanel" class="side-panel" aria-label="Reference checklist and sources" aria-hidden="true">
+        <div class="panel-section">
+          <p class="kicker">Working checklist</p>
+          <h2>Do not lose evidence</h2>
+          <p class="panel-note">
+            This checklist is deliberately procedural. Tick items as you collect proof; it is saved in this browser.
+          </p>
+          <div id="checklist"></div>
+        </div>
+
+        <div class="panel-section">
+          <p class="kicker">Sources</p>
+          <h2>Official first, peer notes second</h2>
+          <p class="panel-note">
+            Rules change. Treat this guide as a map, then verify every amount, form, route, and deadline from the linked IITD/agency pages.
+          </p>
+          <div id="sources"></div>
+        </div>
+      </aside>
+    </main>
+
+    <div id="minimap" class="minimap" aria-hidden="true">
+      <div class="mini-world"></div>
+    </div>
+
+    <footer class="statusbar" aria-live="polite">
+      <span id="zoomLabel">Zoom 100%</span>
+      <span>Drag blank canvas to pan. Drag cards to rearrange; edges follow.</span>
+      <a href="sources/how-to-apply-iitd-international-travel-grant.txt">Extracted HSS guide text</a>
+    </footer>
+
+    <script src="script.js?v=20260506k"></script>
+  </body>
+</html>
