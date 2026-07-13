@@ -1,6 +1,7 @@
 {
   "schema_version": "0.1.0",
   "created": "2026-05-06",
+  "last_updated": "2026-07-13",
   "purpose": "Machine-readable source register for the IITD travel grant GitHub Pages guide.",
   "official_links": [
     {
@@ -63,6 +64,27 @@
       "extracted_text_path": "csir-tg-19-summary-main-blank.txt",
       "pages": 4,
       "status": "combined from official local PDFs"
+    },
+    {
+      "title": "IITD visa NOC issued by Academic Section",
+      "source_path": "../../../dropped-files/IIT-Delhi-NOC.pdf",
+      "local_pdf_path": "../assets/pdfs/iitd-visa-noc-blank-template.pdf",
+      "pages": 1,
+      "status": "signed 2026 source; public site uses a separately rebuilt blank template"
+    },
+    {
+      "title": "IITD bonafide certificate issued for visa",
+      "source_path": "../../../dropped-files/IIT-Delhi-Bonafide.pdf",
+      "local_pdf_path": "../assets/pdfs/iitd-visa-bonafide-blank-template.pdf",
+      "pages": 1,
+      "status": "signed 2026 source; public site uses a separately rebuilt blank template"
+    },
+    {
+      "title": "IITD Application Form for TA Advance",
+      "source_path": "../../../dropped-files/Request-Advance-RSTA.pdf",
+      "local_pdf_path": "../assets/pdfs/rsta-ta-advance-form-public.pdf",
+      "pages": 2,
+      "status": "local IITD form scan; public copy flattened with source signature redacted"
     }
   ],
   "generated_public_examples": [
@@ -118,6 +140,30 @@
       "preview_image_path": "../assets/doc-previews/csir-noc-endorsement-template-page1.png",
       "derived_from": "IITD endorsement-certificate structure adapted from ANRF wording to CSIR wording.",
       "redaction": "Blank form; no applicant or event details included."
+    },
+    {
+      "title": "IITD visa NOC blank template",
+      "source_tex_path": "../examples/iitd/iitd-visa-noc-blank-template.tex",
+      "local_pdf_path": "../assets/pdfs/iitd-visa-noc-blank-template.pdf",
+      "preview_image_path": "../assets/doc-previews/iitd-visa-noc-blank-template-page1.png",
+      "derived_from": "../../../dropped-files/IIT-Delhi-NOC.pdf",
+      "redaction": "Rebuilt from scratch; all variable fields are blank and no signed source scan is embedded."
+    },
+    {
+      "title": "IITD visa bonafide certificate blank template",
+      "source_tex_path": "../examples/iitd/iitd-visa-bonafide-blank-template.tex",
+      "local_pdf_path": "../assets/pdfs/iitd-visa-bonafide-blank-template.pdf",
+      "preview_image_path": "../assets/doc-previews/iitd-visa-bonafide-blank-template-page1.png",
+      "derived_from": "../../../dropped-files/IIT-Delhi-Bonafide.pdf",
+      "redaction": "Rebuilt from scratch; all variable fields are blank and no signed source scan is embedded."
+    },
+    {
+      "title": "IITD TA Advance form, public copy",
+      "source_tex_path": "../examples/iitd/rsta-ta-advance-form-public.tex",
+      "local_pdf_path": "../assets/pdfs/rsta-ta-advance-form-public.pdf",
+      "preview_image_path": "../assets/doc-previews/rsta-ta-advance-form-page1.png",
+      "derived_from": "../../../dropped-files/Request-Advance-RSTA.pdf",
+      "redaction": "Supervisor signature removed from page 2; output flattened before publication."
     }
   ]
 }

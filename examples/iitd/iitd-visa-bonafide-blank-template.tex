@@ -1,0 +1,45 @@
+\documentclass[a4paper]{article}
+\usepackage[margin=0pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\renewcommand{\familydefault}{\sfdefault}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\newcommand{\field}[1]{\rule[-0.7mm]{#1}{0.45pt}}
+
+\begin{document}
+\null
+\begin{tikzpicture}[remember picture,overlay]
+  \node[anchor=north,inner sep=0]
+    at ($(current page.north)+(0,-12mm)$)
+    {\includegraphics[width=160mm]{../../assets/iitd-letterhead-header.png}};
+
+  \node[anchor=north west,align=left,font=\fontsize{11.5}{14}\selectfont]
+    at ($(current page.north west)+(119mm,-67mm)$)
+    {No. IITD/Acad/PG-R/\field{15mm}\\Date: \field{28mm}};
+
+  \node[anchor=north,font=\fontsize{13}{16}\selectfont\bfseries]
+    at ($(current page.north)+(0,-109mm)$)
+    {\underline{BONAFIDE CERTIFICATE}};
+
+  \node[anchor=north west,inner sep=0]
+    at ($(current page.north west)+(18mm,-133mm)$)
+    {\begin{minipage}{174mm}
+      \fontsize{11.5}{23}\selectfont
+      \hspace*{12mm}This is to certify that Mr. \field{48mm} (Entry No. \field{34mm}), is a\\
+      Full-Time bonafide student of Ph.D. in the Department of \field{52mm} at this\\
+      Institute since \field{34mm}.\\[5mm]
+      \hspace*{12mm}This certificate is being issued to him on his own request to apply for visa to\\
+      attend ``\field{60mm}'' from \field{24mm} to \field{24mm} in\\
+      \field{70mm}.
+    \end{minipage}};
+
+  \node[anchor=east,align=center,font=\fontsize{11}{13}\selectfont\bfseries]
+    at ($(current page.south east)+(-19mm,72mm)$)
+    {AAO / Sr. Consultant/AR/ DR (Academics)};
+\end{tikzpicture}
+\end{document}

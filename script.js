@@ -195,17 +195,69 @@ const nodes = [
     bullets: [
       "Expected output 1: Ex-India leave approval/notification.",
       "Expected output 2: travel grant approval/notification.",
-      "After approval, proceed to visa, registration payment, flight booking, and forex.",
-      "Visa files commonly need the IITD NOC/bonafide, RSTA notification, and Ex-India leave approval."
+      "After approval, obtain the Academic Section certificates needed for the visa file and decide whether to request a TA advance.",
+      "Then proceed to visa, registration payment, flight booking, and forex."
     ],
     callout:
       "Book tickets only through authorized agencies/portals and after visa clearance where current rules require it."
   },
   {
+    id: "visa",
+    phase: "travel",
+    x: 3650,
+    y: 880,
+    w: 500,
+    eyebrow: "Visa support",
+    title: "Get NOC + bonafide from Academic Section",
+    body:
+      "In this 2026 workflow, the visa application needed two additional signed IITD certificates. Both were uploaded with the visa application and carried to the biometrics appointment as supporting evidence.",
+    bullets: [
+      {
+        html:
+          '<a href="assets/pdfs/iitd-visa-noc-blank-template.pdf" target="_blank" rel="noopener">IITD visa NOC</a>: blank Academic Section-style template covering full-time PhD status, sanctioned Ex-India leave dates, event dates/location, and no objection to visa issuance.'
+      },
+      {
+        html:
+          '<a href="assets/pdfs/iitd-visa-bonafide-blank-template.pdf" target="_blank" rel="noopener">IITD bonafide certificate</a>: blank Academic Section-style template confirming current full-time PhD registration and recording that the certificate is issued for the visa to attend the named event.'
+      },
+      "Use the exact travel window on the NOC; it can be wider than the event dates because it covers the full approved stay abroad.",
+      "Check spelling, entry number, department, event title, city/country, and every date before leaving the counter."
+    ],
+    callout:
+      "These are separate from the Ex-India leave notification itself. Request them early enough to upload before the visa document deadline.",
+    links: [
+      { label: "Visa NOC blank", href: "assets/pdfs/iitd-visa-noc-blank-template.pdf", target: "_blank" },
+      { label: "Bonafide blank", href: "assets/pdfs/iitd-visa-bonafide-blank-template.pdf", target: "_blank" }
+    ]
+  },
+  {
+    id: "advance",
+    phase: "iitd",
+    x: 3070,
+    y: 880,
+    w: 500,
+    eyebrow: "Optional after sanction",
+    title: "Apply for TA advance up to ₹90,000",
+    body:
+      "After the RSTA/PMRF international-travel sanction and Ex-India leave approval are available, you can submit the TA Advance form to Accounts. This is an advance against approved travel expenditure, not extra funding.",
+    bullets: [
+      "Attach the travel sanction/notification and a copy of the Ex-India leave approval; the form explicitly asks for both.",
+      "Budget heads include fare, hotel, daily allowance, registration, medical insurance, visa, conveyance, and other approved costs.",
+      "The practical maximum used in this 2026 workflow is ₹90,000; confirm the current admissible amount and routing with Accounts before submission.",
+      "Settle the advance within 15 days after completing the return journey. Return any unspent balance, or the full amount if the trip is cancelled or not undertaken.",
+      "Delayed settlement/refund can attract penal interest; preserve the e-ticket and boarding passes for the final claim."
+    ],
+    callout:
+      "Do not treat the ₹90,000 advance as a separate entitlement. Every rupee must be supported and adjusted in the final travel claim.",
+    links: [
+      { label: "TA Advance form", href: "assets/pdfs/rsta-ta-advance-form-public.pdf", target: "_blank" }
+    ]
+  },
+  {
     id: "travel",
     phase: "travel",
-    x: 3700,
-    y: 930,
+    x: 3650,
+    y: 1480,
     w: 520,
     eyebrow: "Before and during travel",
     title: "Create reimbursement evidence as you go",
@@ -223,8 +275,8 @@ const nodes = [
   {
     id: "claim",
     phase: "claim",
-    x: 3130,
-    y: 1260,
+    x: 3070,
+    y: 1900,
     w: 540,
     eyebrow: "Return",
     title: "Reimbursement packet",
@@ -246,11 +298,11 @@ const nodes = [
     phase: "docs",
     x: 690,
     y: 1180,
-    w: 980,
+    w: 700,
     eyebrow: "Documents shelf",
     title: "Keep source documents and templates visible",
     body:
-      "Last updated May 2026. This shelf mixes official PDFs, extracted text, blank printable templates, and redacted examples used in this guide. Before submitting, verify that IITD, ANRF, and CSIR have not changed the current forms.",
+      "Last updated July 2026. This shelf mixes official PDFs, extracted text, blank printable templates, and redacted examples used in this guide. Before submitting, verify that IITD, ANRF, and CSIR have not changed the current forms.",
     docs: [
       {
         image: "assets/doc-previews/iitd-howto-page1.png",
@@ -291,10 +343,24 @@ const nodes = [
         image: "assets/doc-previews/csir-noc-endorsement-template-page1.png",
         href: "assets/pdfs/csir-iitd-noc-endorsement-template.pdf",
         caption: "CSIR NOC/endorsement template adapted from the IITD endorsement wording."
+      },
+      {
+        image: "assets/doc-previews/iitd-visa-noc-blank-template-page1.png",
+        href: "assets/pdfs/iitd-visa-noc-blank-template.pdf",
+        caption: "Blank IITD Academic Section-style visa NOC template, with no applicant or event details."
+      },
+      {
+        image: "assets/doc-previews/iitd-visa-bonafide-blank-template-page1.png",
+        href: "assets/pdfs/iitd-visa-bonafide-blank-template.pdf",
+        caption: "Blank IITD Academic Section-style bonafide certificate template for visa support."
+      },
+      {
+        image: "assets/doc-previews/rsta-ta-advance-form-page1.png",
+        href: "assets/pdfs/rsta-ta-advance-form-public.pdf",
+        caption: "Two-page IITD TA Advance form; signature in the source scan is redacted."
       }
     ],
     links: [
-      { label: "Source register", href: "sources/sources.json" },
       { label: "IITD official downloads", href: "https://academics.iitd.ac.in/downloads/" }
     ]
   },
@@ -331,7 +397,10 @@ const edges = [
   ["csir", "iitd"],
   ["iitd", "routing"],
   ["routing", "approval"],
-  ["approval", "travel"],
+  ["approval", "visa"],
+  ["approval", "advance"],
+  ["visa", "travel"],
+  ["advance", "travel"],
   ["travel", "claim"],
   ["documents", "external"],
   ["documents", "iitd"],
@@ -342,7 +411,8 @@ const edgeLabels = {
   "eligibility->external": "parallel",
   "external->anrf": "portal",
   "external->csir": "packet",
-  "approval->travel": "after notification",
+  "approval->visa": "after notification",
+  "approval->advance": "optional",
   "travel->claim": "return"
 };
 
@@ -362,6 +432,8 @@ const checklist = [
       "Ex-India leave form filled with precise travel dates.",
       "PG leave/research scholar leave form prepared if department requires it.",
       "Supervisor recommendation and Academic Unit approval route confirmed.",
+      "Visa NOC and bonafide certificate collected from Academic Section.",
+      "TA advance form submitted with sanction and Ex-India leave copies, if an advance is needed.",
       "No payment made before Academic Section notification unless unavoidable and documented."
     ]
   },
@@ -412,6 +484,18 @@ const sources = [
     note: "Unofficial HSS guide. Useful for workflow but superseded by current IITD rules where they differ."
   },
   {
+    title: "IITD visa NOC and bonafide blank templates",
+    type: "Redacted 2026 examples",
+    href: "assets/pdfs/iitd-visa-noc-blank-template.pdf",
+    note: "Clean replicas of the Academic Section certificate wording and layout, with all applicant, event, date, reference, signature, and stamp fields left blank."
+  },
+  {
+    title: "IITD Application Form for TA Advance",
+    type: "Local form",
+    href: "assets/pdfs/rsta-ta-advance-form-public.pdf",
+    note: "Two-page form used after travel sanction. The older peer guide and this 2026 workflow use an optional advance up to ₹90,000; verify current Accounts practice."
+  },
+  {
     title: "Akhil Abburu IITD RSTA guide",
     type: "Peer guide",
     href: "https://akhilabburu.github.io/iitd/rsta.html",
@@ -451,7 +535,7 @@ const miniWorld = document.querySelector(".mini-world");
 const panelToggle = document.querySelector('[data-action="toggle-checklist"]');
 const sidePanel = document.getElementById("sidePanel");
 
-const LAYOUT_VERSION = "2026-05-06-flow-v4";
+const LAYOUT_VERSION = "2026-07-13-flow-v5";
 const defaultNodePositions = Object.fromEntries(nodes.map((node) => [node.id, { x: node.x, y: node.y }]));
 
 function loadSavedNodePositions() {
@@ -511,12 +595,21 @@ function renderNodes() {
       ? `<div class="node-links">${node.links.map((link) => `<a class="source-link" href="${escapeHtml(link.href)}" ${link.target ? `target="${escapeHtml(link.target)}" rel="noopener"` : ""}>${escapeHtml(link.label)}</a>`).join("")}</div>`
       : "";
     const docs = node.docs
-      ? `<div class="doc-grid">${node.docs.map((doc) => `
-          <a class="doc-preview" href="${escapeHtml(doc.href)}" target="_blank" rel="noopener">
+      ? `<div class="doc-carousel" data-doc-carousel>
+          <button class="doc-carousel-arrow doc-carousel-prev" type="button" aria-label="Previous document" title="Previous document" data-carousel-prev>‹</button>
+          <div class="doc-carousel-viewport" role="region" aria-label="Document previews" tabindex="0">
+            <div class="doc-carousel-track">${node.docs.map((doc, index) => `
+          <a class="doc-preview${index === 0 ? " is-active" : ""}" href="${escapeHtml(doc.href)}" target="_blank" rel="noopener" data-doc-index="${index}" aria-label="Document ${index + 1} of ${node.docs.length}: ${escapeHtml(doc.caption)}">
             <img src="${escapeHtml(doc.image)}" alt="${escapeHtml(doc.caption)}">
             <span>${escapeHtml(doc.caption)}</span>
           </a>
-        `).join("")}</div>`
+        `).join("")}</div>
+          </div>
+          <button class="doc-carousel-arrow doc-carousel-next" type="button" aria-label="Next document" title="Next document" data-carousel-next>›</button>
+          <div class="doc-carousel-pagination" aria-label="Choose a document">
+            ${node.docs.map((_, index) => `<button class="doc-page${index === 0 ? " is-active" : ""}" type="button" aria-label="Show document ${index + 1}" aria-current="${index === 0 ? "true" : "false"}" data-carousel-page="${index}">${index + 1}</button>`).join("")}
+          </div>
+        </div>`
       : "";
     const callout = node.callout ? `<div class="callout">${renderRichText(node.callout)}</div>` : "";
     return `
@@ -535,6 +628,89 @@ function renderNodes() {
         </div>
       </article>`;
   }).join("");
+}
+
+function initDocumentCarousels() {
+  document.querySelectorAll("[data-doc-carousel]").forEach((carousel) => {
+    const carouselViewport = carousel.querySelector(".doc-carousel-viewport");
+    const slides = [...carousel.querySelectorAll(".doc-preview")];
+    const pages = [...carousel.querySelectorAll(".doc-page")];
+    const previous = carousel.querySelector("[data-carousel-prev]");
+    const next = carousel.querySelector("[data-carousel-next]");
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let activeIndex = 0;
+    let scrollFrame = null;
+    let autoplayTimer = null;
+
+    const setActive = (index) => {
+      activeIndex = (index + slides.length) % slides.length;
+      slides.forEach((slide, slideIndex) => slide.classList.toggle("is-active", slideIndex === activeIndex));
+      pages.forEach((page, pageIndex) => {
+        const active = pageIndex === activeIndex;
+        page.classList.toggle("is-active", active);
+        page.setAttribute("aria-current", String(active));
+      });
+    };
+
+    const goTo = (index, behavior = reducedMotion ? "auto" : "smooth") => {
+      const normalized = (index + slides.length) % slides.length;
+      const slide = slides[normalized];
+      const left = slide.offsetLeft - (carouselViewport.clientWidth - slide.clientWidth) / 2;
+      setActive(normalized);
+      carouselViewport.scrollTo({ left, behavior });
+    };
+
+    const stopAutoplay = () => {
+      window.clearInterval(autoplayTimer);
+      autoplayTimer = null;
+    };
+
+    const startAutoplay = () => {
+      if (reducedMotion || autoplayTimer) return;
+      autoplayTimer = window.setInterval(() => goTo(activeIndex + 1), 5200);
+    };
+
+    previous.addEventListener("click", () => goTo(activeIndex - 1));
+    next.addEventListener("click", () => goTo(activeIndex + 1));
+    pages.forEach((page) => page.addEventListener("click", () => goTo(Number(page.dataset.carouselPage))));
+
+    carouselViewport.addEventListener("scroll", () => {
+      if (scrollFrame) cancelAnimationFrame(scrollFrame);
+      scrollFrame = requestAnimationFrame(() => {
+        const center = carouselViewport.scrollLeft + carouselViewport.clientWidth / 2;
+        let nearestIndex = 0;
+        let nearestDistance = Infinity;
+        slides.forEach((slide, index) => {
+          const slideCenter = slide.offsetLeft + slide.clientWidth / 2;
+          const distance = Math.abs(center - slideCenter);
+          if (distance < nearestDistance) {
+            nearestIndex = index;
+            nearestDistance = distance;
+          }
+        });
+        setActive(nearestIndex);
+      });
+    }, { passive: true });
+
+    carouselViewport.addEventListener("wheel", (event) => {
+      const delta = Math.abs(event.deltaX) > Math.abs(event.deltaY) ? event.deltaX : event.deltaY;
+      if (!delta) return;
+      event.preventDefault();
+      event.stopPropagation();
+      carouselViewport.scrollLeft += delta;
+    }, { passive: false });
+
+    carouselViewport.addEventListener("pointerdown", (event) => event.stopPropagation());
+    carousel.addEventListener("mouseenter", stopAutoplay);
+    carousel.addEventListener("mouseleave", startAutoplay);
+    carousel.addEventListener("focusin", stopAutoplay);
+    carousel.addEventListener("focusout", (event) => {
+      if (!carousel.contains(event.relatedTarget)) startAutoplay();
+    });
+
+    requestAnimationFrame(() => goTo(0, "auto"));
+    startAutoplay();
+  });
 }
 
 function nodeHeight(node) {
@@ -732,9 +908,10 @@ function focusNode(id) {
   if (!node) return;
   const rect = viewport.getBoundingClientRect();
   const targetScale = Math.min(0.82, Math.max(0.54, rect.width / 1600));
+  const focusOffsetY = id === "documents" ? nodeHeight(node) / 2 : 160;
   state.scale = targetScale;
   state.x = rect.width / 2 - (node.x + node.w / 2) * state.scale;
-  state.y = rect.height / 2 - (node.y + 160) * state.scale;
+  state.y = rect.height / 2 - (node.y + focusOffsetY) * state.scale;
   applyTransform();
 }
 
@@ -891,6 +1068,7 @@ function initEvents() {
 
 loadSavedNodePositions();
 renderNodes();
+initDocumentCarousels();
 renderEdges();
 renderChecklist();
 renderSources();

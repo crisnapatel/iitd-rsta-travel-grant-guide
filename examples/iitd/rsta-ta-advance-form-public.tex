@@ -1,0 +1,22 @@
+\documentclass[a4paper]{article}
+\usepackage[margin=0pt]{geometry}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\pagestyle{empty}
+
+\begin{document}
+\null
+\begin{tikzpicture}[remember picture,overlay]
+  \node[inner sep=0] at (current page.center) {\includegraphics[page=1,width=\paperwidth,height=\paperheight]{../../../../dropped-files/Request-Advance-RSTA.pdf}};
+\end{tikzpicture}
+\newpage
+\null
+\begin{tikzpicture}[remember picture,overlay]
+  \node[inner sep=0] at (current page.center) {\includegraphics[page=2,width=\paperwidth,height=\paperheight]{../../../../dropped-files/Request-Advance-RSTA.pdf}};
+  \fill[white] ($(current page.south west)+(136mm,114mm)$)
+    rectangle ($(current page.south west)+(190mm,129mm)$);
+  \node[anchor=center,font=\sffamily\bfseries\scriptsize]
+    at ($(current page.south west)+(163mm,121.5mm)$) {[SIGNATURE REDACTED]};
+\end{tikzpicture}
+\end{document}
