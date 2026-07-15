@@ -260,17 +260,20 @@ const nodes = [
     y: 1480,
     w: 520,
     eyebrow: "Before and during travel",
-    title: "Create reimbursement evidence as you go",
+    title: "Plan travel money and preserve evidence",
     body:
-      "Reimbursement is easier if you behave like a future auditor from the day you leave. Preserve evidence at transaction time, not after you return.",
+      "A forex card can be a convenient way to carry most of your travel money without relying on a large amount of cash. Keep a small cash backup for unexpected situations, and preserve evidence at transaction time for reimbursement.",
     bullets: [
+      "The SBI branch on the IIT Delhi campus may issue and load forex cards. Ask early about availability, supported currencies, exchange rate, fees, overseas cash-withdrawal charges, reloading, and what to do if the card is lost or blocked.",
+      "Do not treat one payment method as your only option: carry only a small amount of emergency cash, keep it separately from the forex card, and retain another usable payment method as backup if possible.",
+      "Save the forex purchase/loading receipt, exchange-rate evidence, and forex-card statement or transaction record.",
       "Original boarding passes for all onward, return, and connecting flights.",
-      "Registration, visa, insurance, flight, accommodation, food, local travel, and forex receipts.",
+      "Registration, visa, insurance, flight, accommodation, food, local travel, and other receipts.",
       "Bank/card statements showing electronic payments; highlight the relevant lines.",
       "Proof of presentation or participation certificate from the organizer."
     ],
     callout:
-      "For foreign-currency expenses, preserve rate evidence. The old peer guide suggests SBI/RBI exchange-rate proof for the purchase date."
+      "First-hand example, July 2026: I obtained a forex card from the SBI branch on the IIT Delhi campus and loaded £200 for a UK trip. That amount was my personal starting balance, not a recommended amount for every traveller."
   },
   {
     id: "claim",
@@ -444,6 +447,15 @@ const checklist = [
       "CSIR TG/19 summary and main form prepared with NOC and attachments.",
       "Airfare estimate obtained from government-approved travel agent/portal.",
       "External grant acknowledgement/reference numbers saved."
+    ]
+  },
+  {
+    title: "Travel money",
+    items: [
+      "Forex card availability, supported currency, exchange rate, fees, reloading, and emergency support confirmed.",
+      "Forex purchase/loading receipt and card transaction records saved.",
+      "A small amount of emergency cash packed separately; the full travel budget is not being carried in cash.",
+      "A second usable payment method kept as backup where possible."
     ]
   },
   {

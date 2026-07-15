@@ -14,6 +14,7 @@ The RSTA process is spread across several offices, forms, and external agencies.
 - when Ex-India leave and Academic Section approval become blockers;
 - which Academic Section NOC and bonafide certificates support the visa application;
 - how the optional TA advance of up to Rs. 90,000 fits after travel sanction;
+- how a forex card, minimum emergency cash, and a backup payment method can make travel money easier to manage;
 - what receipts and proof must be preserved for reimbursement.
 
 The website turns that sequence into an infinite-canvas workflow. Each card explains one stage, the relationship edges show dependencies, and the checklist keeps the practical evidence requirements visible while you prepare the packet.
@@ -27,7 +28,8 @@ Start from the acceptance-evidence card, then move left to right:
 3. Prepare the IITD RSTA and Ex-India leave packet.
 4. Wait for the Academic Section notification before making risky payments.
 5. Collect the visa NOC and bonafide certificate; optionally apply for TA advance after sanction.
-6. Keep travel and reimbursement evidence organized from the beginning.
+6. Arrange travel money: consider a forex card for convenience, carry only a small cash backup, and keep another payment method where possible.
+7. Keep travel and reimbursement evidence organized from the beginning.
 
 The document shelf links official PDFs, blank printable templates, and redacted examples. Treat the examples as layout and wording aids, not as official rules.
 

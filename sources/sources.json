@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "created": "2026-05-06",
-  "last_updated": "2026-07-13",
+  "last_updated": "2026-07-15",
   "purpose": "Machine-readable source register for the IITD travel grant GitHub Pages guide.",
   "official_links": [
     {
@@ -30,6 +30,13 @@
       "title": "Akhil Abburu IITD RSTA guide",
       "url": "https://akhilabburu.github.io/iitd/rsta.html",
       "role": "Unofficial process notes on DRC/PG routing, tracking numbers, travel evidence, and reimbursement habits. Use as practical context only."
+    }
+  ],
+  "author_field_notes": [
+    {
+      "date": "2026-07-14",
+      "title": "SBI IIT Delhi campus forex card",
+      "role": "First-hand author experience: obtained a forex card at the SBI branch on the IIT Delhi campus and loaded GBP 200 for an upcoming UK trip. The amount is an example, not a recommendation; future readers should verify current availability, exchange rates, fees, supported currencies, reloading, and emergency support with the branch."
     }
   ],
   "local_source_files": [
