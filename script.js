@@ -30,18 +30,18 @@ const nodes = [
     x: 160,
     y: 420,
     w: 430,
-    eyebrow: "Trigger",
-    title: "You have acceptance evidence",
+    eyebrow: "Before you start",
+    title: "Start with the acceptance letter",
     body:
-      "Start only after you have a useful organizer letter or email. It should name you, state the event, dates, venue, abstract title, author list where possible, and mode of presentation.",
+      "Before starting the applications, make sure the organizer's letter or email includes your name, the event dates and venue, your abstract title, the author list, and whether you are giving a talk or presenting a poster.",
     bullets: [
-      "Keep the original email/PDF, not only a screenshot.",
+      "Keep the original email or PDF. A screenshot alone may not be enough.",
       "If the letter is generic, ask for a specific one before you enter grant portals.",
       "Do not pay non-refundable registration fees before IITD approval if reimbursement depends on it.",
       "If an invitation or certificate is not in English, attach a self-attested English translation."
     ],
     callout:
-      "For schools/workshops/posters, get explicit written confirmation and check the Academic Section early. RSTA language is conference-paper oriented.",
+      "A poster or oral presentation of your research is valid for RSTA. If the event itself is a school or workshop, ask the Academic Section whether it is eligible before spending any money.",
     links: [{ label: "IITD downloads", href: "https://academics.iitd.ac.in/downloads/" }]
   },
   {
@@ -50,17 +50,17 @@ const nodes = [
     x: 720,
     y: 390,
     w: 470,
-    eyebrow: "Gate 1",
-    title: "RSTA eligibility and risk check",
+    eyebrow: "First check",
+    title: "Check whether your trip fits RSTA",
     body:
-      "Use the current RSTA guidelines first. The 18 Nov 2025 guidelines say full-time PhD scholars may get support up to Rs. 2,00,000, subject to standing, comprehensive completion, five-year registration window, and presentation at a reputed conference.",
+      "As of 18 Nov 2025, full-time PhD scholars may receive up to ₹2,00,000. The guidelines also set conditions on academic standing, completion of the comprehensive exam, time since registration, and presentation at a reputed conference.",
     bullets: [
       "Attach proof that you applied to two external travel-grant agencies. If a decision or rejection has already arrived, attach that too.",
-      "Responses from external sponsors, if any, are submitted with reimbursement claims.",
-      "RSTA is not framed for training schools or workshops. Do not assume a poster at a school will be treated like a regular conference paper."
+      "Keep any reply you receive from an external sponsor. Accounts may ask for it during reimbursement.",
+      "The RSTA guidelines focus on conference travel. Check with the Academic Section before relying on a poster at a school or workshop."
     ],
     callout:
-      "If your case is unusual, get written organizer evidence and ask the Academic Section before spending money.",
+      "If you are unsure whether your trip qualifies, take the organizer's letter to the Academic Section and ask before spending money.",
     links: [
       { label: "RSTA guidelines PDF", href: "assets/pdfs/rsta-guidelines-18nov25.pdf", target: "_blank" },
       { label: "HSS peer guide PDF", href: "assets/pdfs/how-to-apply-iitd-international-travel-grant.pdf", target: "_blank" }
@@ -72,17 +72,17 @@ const nodes = [
     x: 1280,
     y: 390,
     w: 480,
-    eyebrow: "Parallel work",
+    eyebrow: "External funding",
     title: "Apply to two external travel grants",
     bodyHtml:
-      'Do this in parallel with the IITD paperwork. RSTA asks for proof that you applied to two external agencies, or their decisions if you already received them. For my 2026 application, I used ANRF ITS and the CSIR Travel Grant. You can find more options in this <a href="https://docs.google.com/spreadsheets/d/19BSz7_LxOOZt9heQeNKxG1ubPoZTs3FokLg4w8LZjRY/edit?gid=0#gid=0" target="_blank" rel="noopener">external funding options sheet</a>.',
+      'I worked on the external applications while my IITD paperwork was moving. RSTA asks for proof of two applications, or the decisions if they have already arrived. I applied to ANRF ITS and the CSIR Travel Grant. You can find other options in this <a href="https://docs.google.com/spreadsheets/d/19BSz7_LxOOZt9heQeNKxG1ubPoZTs3FokLg4w8LZjRY/edit?gid=0#gid=0" target="_blank" rel="noopener">external funding options sheet</a>.',
     bullets: [
       "Save portal acknowledgement, reference number, submitted PDF, and email receipts.",
       "For physical/postal submissions, keep a stamped receiving copy or Speed Post receipt.",
       "If an agency funds you, check IITD rules before claiming RSTA for overlapping expenses."
     ],
     callout:
-      "Treat external applications as real applications. A weak or incomplete packet can create trouble later if reimbursement staff ask what was submitted.",
+      "Keep a copy of the complete packet you submitted to each agency. Accounts may ask to see it during reimbursement.",
     links: [
       { label: "ANRF ITS", href: "https://anrfonline.in/ANRF/its" },
       { label: "CSIR HRDG travel grant", href: "https://csirhrdg.res.in/Home/Index/1/InPage/51/14" }
@@ -97,16 +97,16 @@ const nodes = [
     eyebrow: "External grant A",
     title: "ANRF ITS online packet",
     body:
-      "ANRF ITS is portal-based. The blocker is usually not typing the form; it is obtaining documents in the exact language the portal expects.",
+      "ANRF ITS is submitted through an online portal. Most of the work is collecting the documents in the wording and format the portal expects.",
     bullets: [
-      "The acceptance or invitation should show your name, abstract title, and mode of presentation.",
+      "Make sure the acceptance letter shows your name, abstract title, and mode of presentation.",
       {
         html:
           'Prepare <a href="assets/pdfs/anrf-event-benefits-example-redacted.pdf" target="_blank" rel="noopener">event benefits</a>, event details, abstract, <a href="assets/pdfs/anrf-applicant-certificate-blank.pdf" target="_blank" rel="noopener">certificate by applicant</a>, DOB proof, and <a href="assets/pdfs/anrf-other-support-declaration-blank.pdf" target="_blank" rel="noopener">other-support declaration</a>.'
       },
       {
         html:
-          'Head of institution endorsement may require a specific IITD Academic Unit certificate instead of a department-forwarded letter. On <a href="https://academics.iitd.ac.in/downloads/" target="_blank" rel="noopener">IITD downloads</a>, look for the editable DOCX named "Template for Endorsment Certificate". The blank printable template below is only a layout reference.'
+          'The head-of-institution endorsement may require a specific IITD Academic Unit certificate. On <a href="https://academics.iitd.ac.in/downloads/" target="_blank" rel="noopener">IITD downloads</a>, look for the editable DOCX named "Template for Endorsment Certificate". I have linked a blank printable version below so you can see the layout. Use the current IITD file when you apply.'
       }
     ],
     callout:
@@ -126,9 +126,9 @@ const nodes = [
     y: 690,
     w: 500,
     eyebrow: "External grant B",
-    title: "CSIR Travel Grant is a postal-style packet",
+    title: "Prepare the CSIR Travel Grant packet",
     body:
-      "CSIR TG/19 normally means preparing a summary sheet and a main application, then attaching proof documents. It is not only a web form.",
+      "For CSIR TG/19, prepare the summary sheet, main application, and supporting documents as one packet.",
     bullets: [
       {
         html:
@@ -136,7 +136,7 @@ const nodes = [
       },
       {
         html:
-          'Typical attachments: event announcement, acceptance/invitation, accepted abstract, your two best published papers in indexed journals from the last five years, airfare estimate from a government-approved travel agent, brief CV, <a href="assets/pdfs/csir-iitd-noc-endorsement-template.pdf" target="_blank" rel="noopener">NOC/endorsement certificate for CSIR</a>, and other support declarations. The CSIR NOC can follow the same IITD endorsement-certificate structure used for ANRF, with ANRF replaced by CSIR.'
+          'The usual attachments include the event announcement, acceptance letter, accepted abstract, your two best papers from indexed journals in the last five years, an airfare estimate from a government-approved travel agent, a short CV, the <a href="assets/pdfs/csir-iitd-noc-endorsement-template.pdf" target="_blank" rel="noopener">NOC or endorsement certificate for CSIR</a>, and the other-support declarations. I used the IITD endorsement format prepared for ANRF and changed the agency name to CSIR.'
       },
       "The airfare estimate must be economy/excursion class by the shortest route."
     ],
@@ -154,14 +154,14 @@ const nodes = [
     x: 2520,
     y: 390,
     w: 520,
-    eyebrow: "Main IITD packet",
+    eyebrow: "IITD paperwork",
     title: "Assemble the RSTA + Ex-India leave packet",
     body:
-      "The internal IITD file is what unlocks approval and reimbursement. Keep the packet complete, signed, and photocopied before every handoff.",
+      "IITD uses this file for approval and later reimbursement. Keep a scan of the complete signed packet before you hand it over.",
     bullets: [
       "RSTA form with budget and two external-application proofs.",
       "Ex-India leave form with exact travel dates and place of visit.",
-      "PG leave/research-scholar leave form, if required by your department workflow.",
+      "Ask your department whether it also needs a PG leave or research scholar leave form.",
       "Acceptance/invitation, abstract, event website/brochure, airfare estimate, and supervisor recommendation."
     ],
     callout:
@@ -177,20 +177,20 @@ const nodes = [
     x: 3130,
     y: 390,
     w: 500,
-    eyebrow: "Routing",
+    eyebrow: "Where it goes",
     title: "Supervisor, Academic Unit, Academic Section",
     body:
-      "The exact route differs by department, but the approval logic is stable: supervisor recommendation, Head of Academic Unit approval, then Academic Section notification.",
+      "The route varies by department. In general, the file goes through your supervisor, the Head of your Academic Unit, and then the Academic Section.",
     bullets: [
-      "Ask the department office where your packet is expected to enter.",
-      "Check the next DRC timing early. This meeting schedule can cause most of the delay.",
+      "Ask the department office which desk should receive your file.",
+      "Ask when the next DRC meeting is because your file may have to wait for it.",
       "Record the dispatch/dak/serial tracking number assigned to the file.",
       "Keep a scan/photocopy of the signed packet before it leaves your hands.",
       "If there is no update after the expected window, go in person to the relevant office with the tracking number."
     ],
     callout: {
       html:
-        'If an Academic Unit certificate can be signed directly by the Academic Section for an external portal, use that route instead of creating an unnecessary department forwarding loop. See also the <a href="https://akhilabburu.github.io/iitd/rsta.html" target="_blank" rel="noopener">unofficial RSTA process notes</a>.'
+        'Some certificates for external grant portals can be signed directly by the Academic Section. Ask them before sending the document through your department. The <a href="https://akhilabburu.github.io/iitd/rsta.html" target="_blank" rel="noopener">unofficial RSTA process notes</a> also explain the usual routing.'
     }
   },
   {
@@ -199,18 +199,18 @@ const nodes = [
     x: 3700,
     y: 390,
     w: 400,
-    eyebrow: "Approval boundary",
+    eyebrow: "Before spending",
     title: "Wait for notification before spending",
     body:
-      "The risky point is paying before approval. If visa or registration deadlines force you to act, document the reason and understand that reimbursement can become uncertain.",
+      "Avoid paying before you have IITD approval. If a visa or registration deadline forces you to pay earlier, keep a record of why you had to do it and check with the Academic Section.",
     bullets: [
-      "Expected output 1: Ex-India leave approval/notification.",
-      "Expected output 2: travel grant approval/notification.",
+      "Keep the Ex-India leave approval or notification.",
+      "Keep the travel grant approval or notification.",
       "After approval, obtain the Academic Section certificates needed for the visa file and decide whether to request a TA advance.",
       "Then proceed to visa, registration payment, flight booking, and forex."
     ],
     callout:
-      "Book tickets only through authorized agencies/portals and after visa clearance where current rules require it."
+      "After I received the required approval and visa clearance, I went to the Balmer Lawrie travel desk on the first floor of the Admin Building, near the Seminar Hall. The agent prepared the quotation and booked my ticket. I was not charged for either service. You may also be able to book through your own Balmer Lawrie account, so ask the travel desk if you prefer that option."
   },
   {
     id: "visa",
@@ -218,7 +218,7 @@ const nodes = [
     x: 3650,
     y: 880,
     w: 500,
-    eyebrow: "Visa support",
+    eyebrow: "Visa paperwork",
     title: "Get NOC + bonafide from Academic Section",
     body:
       "For my 2026 UK trip, I needed two extra signed certificates from IITD. I uploaded both with the visa application and carried them to the biometrics appointment.",
@@ -235,7 +235,7 @@ const nodes = [
       "Check spelling, entry number, department, event title, city/country, and every date before leaving the counter."
     ],
     callout:
-      "These are separate from the Ex-India leave notification itself. Request them early enough to upload before the visa document deadline.",
+      "The Ex-India leave notification does not replace these two certificates. Request them early enough to meet your visa document deadline.",
     links: [
       { label: "Visa NOC blank", href: "assets/pdfs/iitd-visa-noc-blank-template.pdf", target: "_blank" },
       { label: "Bonafide blank", href: "assets/pdfs/iitd-visa-bonafide-blank-template.pdf", target: "_blank" }
@@ -247,19 +247,19 @@ const nodes = [
     x: 3070,
     y: 880,
     w: 500,
-    eyebrow: "Optional after sanction",
+    eyebrow: "After approval",
     title: "Apply for TA advance up to ₹90,000",
     body:
-      "After the RSTA/PMRF international-travel sanction and Ex-India leave approval are available, you can submit the TA Advance form to Accounts. This is an advance against approved travel expenditure, not extra funding.",
+      "Once you have the RSTA or PMRF travel sanction and Ex-India leave approval, you can submit the TA Advance form to Accounts. The advance is deducted when Accounts settles your final claim.",
     bullets: [
       "Attach the travel sanction or notification and a copy of the Ex-India leave approval. The form asks for both.",
       "Budget heads include fare, hotel, daily allowance, registration, medical insurance, visa, conveyance, and other approved costs.",
-      "I received a ₹90,000 advance. Confirm the current limit and routing with Accounts before you submit the form.",
+      "I received a ₹90,000 advance. Ask Accounts about the current limit and where to submit the form.",
       "Settle the advance within 15 days after completing the return journey. Return any unspent balance, or the full amount if the trip is cancelled or not undertaken.",
       "A delayed settlement or refund can attract penal interest. Keep the e-ticket and boarding passes for the final claim."
     ],
     callout:
-      "Do not treat the ₹90,000 advance as a separate entitlement. Every rupee must be supported and adjusted in the final travel claim.",
+      "The advance is adjusted in the final claim. Keep proof for every expense and return any amount you do not use.",
     links: [
       { label: "TA Advance form", href: "assets/pdfs/rsta-ta-advance-form-public.pdf", target: "_blank" }
     ]
@@ -270,13 +270,13 @@ const nodes = [
     x: 3650,
     y: 1480,
     w: 520,
-    eyebrow: "Before and during travel",
-    title: "Plan travel money and preserve evidence",
+    eyebrow: "During travel",
+    title: "Carry money safely and keep the receipts",
     body:
-      "A forex card can be a convenient way to carry most of your travel money without relying on a large amount of cash. Keep a small cash backup for unexpected situations, and preserve evidence at transaction time for reimbursement.",
+      "A forex card can be a convenient way to carry most of your travel money. Keep a small amount of cash for emergencies and save the receipt or transaction record each time you pay for something.",
     bullets: [
       "The SBI branch on the IIT Delhi campus may issue and load forex cards. Ask early about availability, supported currencies, exchange rate, fees, overseas cash-withdrawal charges, reloading, and what to do if the card is lost or blocked.",
-      "Do not treat one payment method as your only option: carry only a small amount of emergency cash, keep it separately from the forex card, and retain another usable payment method as backup if possible.",
+      "Keep at least one backup payment method. Carry a small amount of emergency cash separately from the forex card.",
       "Save the forex purchase/loading receipt, exchange-rate evidence, and forex-card statement or transaction record.",
       "Original boarding passes for all onward, return, and connecting flights.",
       "Registration, visa, insurance, flight, accommodation, food, local travel, and other receipts.",
@@ -284,7 +284,7 @@ const nodes = [
       "Proof of presentation or participation certificate from the organizer."
     ],
     callout:
-      "I got a forex card from the SBI branch on the IIT Delhi campus in July 2026 and loaded £200 for my UK trip. That was my starting balance, not a recommended amount for everyone."
+      "I got my forex card from the SBI branch on campus in July 2026 and loaded £200 before leaving for the UK. I also kept some cash and another card as backup."
   },
   {
     id: "claim",
@@ -292,23 +292,23 @@ const nodes = [
     x: 3070,
     y: 1900,
     w: 540,
-    eyebrow: "Return",
+    eyebrow: "After you return",
     title: "Submit the reimbursement claim within 15 days",
     body:
       "The IITD T.A. Reimbursement/Settlement Form says you must submit the completed claim within 15 days of finishing the journey. Do not wait for a reminder. In my case, Accounts followed up only around day 12 or 13, which left very little time to fix anything missing.",
     bullets: [
-      "Fill the T.A. reimbursement form, list the advance already drawn, group expenses by category, and count the enclosures.",
-      "Ex-India leave and travel grant approval notifications.",
-      "Two external-funding rejection/decision letters or the documents requested by Accounts for those applications.",
+      "Fill in the T.A. reimbursement form. Mention the advance you received, group the expenses by category, and count the enclosures.",
+      "Attach the Ex-India leave and travel grant approval notifications.",
+      "Attach the two external-funding decisions or rejections, along with anything else Accounts asks for from those applications.",
       "Attach payment proof for accommodation, visa, flights, registration, and other electronic payments. This normally means the relevant lines from your bank or card statement.",
-      "Original registration, hotel/stay, poster-printing, visa-fee, food, and local-travel bills. Airport transfers can include the trip to Delhi airport and the arrival transfer abroad.",
-      "Original boarding passes, especially the return boarding pass, together with the e-ticket/PNR and flight payment proof.",
+      "Attach the original bills for registration, accommodation, poster printing, visa fees, food, and local travel. Local travel can include the trip to Delhi airport and the transfer from the airport after you arrive abroad.",
+      "Attach the original boarding passes, especially the return boarding pass. Keep them with the e-ticket or PNR and the flight payment proof.",
       "Here, ‘original’ means the bill or receipt as issued to you. If the issuer supplied only a digital document, print that file. Do not substitute a photocopy of a paper original.",
       "Arrange bills on A4 sheets where required and add a tabulated attachment index with page numbers.",
-      "Keep the reimbursement date range aligned with IITD rules. It may differ from the conference dates, duty leave, personal leave, and full Ex-India travel dates."
+      "Check the reimbursement dates carefully. They may differ from the conference dates, duty leave, personal leave, and the full Ex-India travel period."
     ],
     callout:
-      "I received ₹90,000 as an advance and ₹1,10,000 after the claim was processed, so I received the full ₹2,00,000. Your approved amount may be different.",
+      "I received ₹90,000 as an advance. After the claim was processed, Accounts reimbursed the remaining ₹1,10,000. That brought the total to ₹2,00,000.",
     links: [
       { label: "Fillable T.A. reimbursement form", href: "assets/pdfs/iitd-travel-reimbursement-form.pdf", target: "_blank" }
     ]
@@ -319,20 +319,20 @@ const nodes = [
     x: 690,
     y: 1180,
     w: 700,
-    eyebrow: "Documents shelf",
-    title: "Keep source documents and templates visible",
+    eyebrow: "Forms and examples",
+    title: "Documents used in this guide",
     body:
-      "Last updated August 2026. This shelf mixes official PDFs, extracted text, blank printable templates, and redacted examples used in this guide. Before submitting, verify that IITD, ANRF, and CSIR have not changed the current forms.",
+      "I have included the official forms, blank templates, and redacted examples I used while making this guide. Check the IITD, ANRF, and CSIR websites for newer versions before submitting.",
     docs: [
       {
         image: "assets/doc-previews/iitd-howto-page1.png",
         href: "assets/pdfs/how-to-apply-iitd-international-travel-grant.pdf",
-        caption: "Unofficial HSS peer guide, 8 pages. Useful for workflow and reimbursement tactics."
+        caption: "Unofficial HSS peer guide, 8 pages. Useful for process and reimbursement tips."
       },
       {
         image: "assets/doc-previews/rsta-guidelines-page1.png",
         href: "assets/pdfs/rsta-guidelines-18nov25.pdf",
-        caption: "IITD RSTA/RETA guidelines, 18 Nov 2025. Treat as authoritative over older peer notes."
+        caption: "IITD RSTA/RETA guidelines, 18 Nov 2025. Use these guidelines when older peer notes differ."
       },
       {
         image: "assets/doc-previews/rsta-form-page1.png",
@@ -377,7 +377,7 @@ const nodes = [
       {
         image: "assets/doc-previews/rsta-ta-advance-form-page1.png",
         href: "assets/pdfs/rsta-ta-advance-form-public.pdf",
-        caption: "Two-page IITD TA Advance form; signature in the source scan is redacted."
+        caption: "Two-page IITD TA Advance form. The signature in the source scan is redacted."
       },
       {
         image: "assets/doc-previews/iitd-travel-reimbursement-form-page1.png",
@@ -395,20 +395,20 @@ const nodes = [
     x: 1900,
     y: 1260,
     w: 620,
-    eyebrow: "Failure modes",
-    title: "The mistakes that cost time",
+    eyebrow: "Common problems",
+    title: "Things that delayed the paperwork",
     body:
-      "Most delays come from document mismatches. Arrange the packet so Accounts can verify it without having to call you.",
+      "Before submitting the file, check that these details match across your forms and supporting documents.",
     bullets: [
-      "Organizer letter says accepted, but not abstract title or presentation mode.",
-      "RSTA says two external agencies, but you only saved a draft, not submitted proof.",
-      "Airfare estimate is from a normal travel website, not an approved route/agent requirement.",
+      "The acceptance letter does not mention the abstract title or mode of presentation.",
+      "You saved a draft of an external grant application instead of proof that it was submitted.",
+      "The airfare estimate came from a regular travel website instead of an approved agent or portal.",
       "Registration or tickets paid before IITD approval or visa clearance.",
-      "Receipts exist, but payment statements do not clearly match the receipts.",
+      "It is difficult to match the receipts with the payment statements.",
       "Dates are copied mechanically across all forms even though RSTA, duty leave, personal leave, reimbursement, and Ex-India leave may need different ranges."
     ],
     callout:
-      "One folder, one checklist, one provenance file. Rename PDFs so a human can understand them without opening each one."
+      "Keep the files for one trip in the same folder. Use clear names such as ANRF-acknowledgement.pdf or hotel-receipt.pdf so you can find them quickly."
   }
 ];
 
@@ -476,14 +476,14 @@ const checklist = [
     items: [
       "Forex card availability, supported currency, exchange rate, fees, reloading, and emergency support confirmed.",
       "Forex purchase/loading receipt and card transaction records saved.",
-      "A small amount of emergency cash packed separately. The full travel budget is not being carried in cash.",
-      "A second usable payment method kept as backup where possible."
+      "A small amount of emergency cash packed separately from the forex card.",
+      "Another usable card or payment method kept as backup."
     ]
   },
   {
     title: "After return",
     items: [
-      "T.A. reimbursement claim submitted within 15 days of completing the journey, without waiting for an Accounts reminder.",
+      "T.A. reimbursement claim submitted within 15 days of completing the journey.",
       "Advance drawn recorded and deducted in the claim form.",
       "Two external-funding rejection/decision documents attached if requested.",
       "Original boarding passes retained.",
@@ -500,7 +500,7 @@ const sources = [
     title: "IITD Academics downloads",
     type: "Official page",
     href: "https://academics.iitd.ac.in/downloads/",
-    note: "Use this page to fetch current forms and notifications before applying."
+    note: "Check this page for the current forms and notifications before applying."
   },
   {
     title: "IITD RSTA/RETA guidelines, 18 Nov 2025",
@@ -518,19 +518,19 @@ const sources = [
     title: "How to Apply for IITD International Travel Grant",
     type: "Peer guide",
     href: "sources/how-to-apply-iitd-international-travel-grant.txt",
-    note: "Unofficial HSS guide. Useful for workflow but superseded by current IITD rules where they differ."
+    note: "This is an unofficial HSS guide. It has useful process tips, but follow the current IITD rules wherever they differ."
   },
   {
     title: "IITD visa NOC and bonafide blank templates",
     type: "Redacted 2026 examples",
     href: "assets/pdfs/iitd-visa-noc-blank-template.pdf",
-    note: "Clean replicas of the Academic Section certificate wording and layout, with all applicant, event, date, reference, signature, and stamp fields left blank."
+    note: "Blank copies made from the Academic Section wording and layout. Names, dates, reference numbers, signatures, and stamps have been removed."
   },
   {
     title: "IITD Application Form for TA Advance",
     type: "Local form",
     href: "assets/pdfs/rsta-ta-advance-form-public.pdf",
-    note: "Two-page form used after travel sanction. I received an optional ₹90,000 advance in 2026. Check the current limit and process with Accounts."
+    note: "This is the two-page form I used after receiving the travel sanction. I received ₹90,000 in 2026. Ask Accounts for the current limit and submission process."
   },
   {
     title: "IITD T.A. Reimbursement/Settlement Form",
@@ -542,7 +542,7 @@ const sources = [
     title: "Akhil Abburu IITD RSTA guide",
     type: "Peer guide",
     href: "https://akhilabburu.github.io/iitd/rsta.html",
-    note: "Unofficial workflow notes on department routing, DRC/PG handoffs, tracking numbers, travel evidence, and reimbursement."
+    note: "Unofficial notes on department routing, DRC or PG handoffs, tracking numbers, travel documents, and reimbursement."
   },
   {
     title: "CSIR HRDG Travel Grant Scheme",
@@ -575,8 +575,9 @@ const edgeLayer = document.getElementById("edgeLayer");
 const zoomLabel = document.getElementById("zoomLabel");
 const search = document.getElementById("search");
 const miniWorld = document.querySelector(".mini-world");
-const panelToggle = document.querySelector('[data-action="toggle-checklist"]');
+const panelToggles = [...document.querySelectorAll('[data-action="toggle-checklist"]')];
 const sidePanel = document.getElementById("sidePanel");
+const headerMenus = [...document.querySelectorAll(".header-menu")];
 
 const LAYOUT_VERSION = "2026-07-13-flow-v5";
 const defaultNodePositions = Object.fromEntries(nodes.map((node) => [node.id, { x: node.x, y: node.y }]));
@@ -606,7 +607,7 @@ function saveNodePositions() {
 
 function setPanelOpen(open) {
   document.body.classList.toggle("panel-open", open);
-  if (panelToggle) panelToggle.setAttribute("aria-expanded", String(open));
+  panelToggles.forEach((toggle) => toggle.setAttribute("aria-expanded", String(open)));
   if (sidePanel) sidePanel.setAttribute("aria-hidden", String(!open));
   setTimeout(() => {
     renderEdges();
@@ -1009,7 +1010,33 @@ function searchCanvas(term) {
   if (firstMatch) focusNode(firstMatch);
 }
 
+function syncResponsiveHeader() {
+  search.placeholder = window.innerWidth <= 520
+    ? "Search guide"
+    : "Search forms, approvals, reimbursement...";
+}
+
 function initEvents() {
+  const closeHeaderMenus = (except = null) => {
+    headerMenus.forEach((menu) => {
+      if (menu !== except) menu.open = false;
+    });
+  };
+
+  headerMenus.forEach((menu) => {
+    menu.addEventListener("toggle", () => {
+      if (menu.open) closeHeaderMenus(menu);
+    });
+  });
+
+  document.addEventListener("pointerdown", (event) => {
+    if (!event.target.closest(".header-menu")) closeHeaderMenus();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeHeaderMenus();
+  });
+
   viewport.addEventListener("wheel", (event) => {
     event.preventDefault();
     const factor = event.deltaY > 0 ? 0.92 : 1.08;
@@ -1041,6 +1068,7 @@ function initEvents() {
     button.addEventListener("click", () => {
       if (button.dataset.action === "toggle-checklist") {
         setPanelOpen(!document.body.classList.contains("panel-open"));
+        closeHeaderMenus();
         return;
       }
       const rect = viewport.getBoundingClientRect();
@@ -1050,6 +1078,7 @@ function initEvents() {
       if (button.dataset.action === "zoom-out") zoomAt(centerX, centerY, 0.86);
       if (button.dataset.action === "fit") fitCanvas();
       if (button.dataset.action === "reset-layout") resetLayout();
+      closeHeaderMenus();
     });
   });
 
@@ -1095,7 +1124,10 @@ function initEvents() {
   });
 
   document.querySelectorAll("[data-focus]").forEach((button) => {
-    button.addEventListener("click", () => focusNode(button.dataset.focus));
+    button.addEventListener("click", () => {
+      focusNode(button.dataset.focus);
+      closeHeaderMenus();
+    });
   });
 
   search.addEventListener("input", (event) => searchCanvas(event.target.value));
@@ -1110,6 +1142,8 @@ function initEvents() {
   });
 
   window.addEventListener("resize", () => {
+    closeHeaderMenus();
+    syncResponsiveHeader();
     renderEdges();
     if (viewport.clientWidth < 540) {
       focusNode("start");
@@ -1128,4 +1162,9 @@ renderSources();
 renderMiniMap();
 initEvents();
 setPanelOpen(false);
-fitCanvas();
+syncResponsiveHeader();
+if (window.innerWidth <= 520) {
+  focusNode("start");
+} else {
+  fitCanvas();
+}

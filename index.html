@@ -9,10 +9,25 @@
       name="description"
       content="A practical canvas guide for IIT Delhi PhD students applying for RSTA, ANRF ITS, CSIR travel grant, Ex-India leave, visa support documents, TA advance, and reimbursement."
     >
-    <link rel="stylesheet" href="styles.css?v=20260828b">
+    <link rel="stylesheet" href="styles.css?v=20260828d">
   </head>
   <body>
     <header class="topbar" aria-label="Guide controls">
+      <details class="header-menu header-menu-sections">
+        <summary aria-label="Open guide sections">
+          <span class="menu-symbol" aria-hidden="true">☰</span>
+          <span class="menu-label">Sections</span>
+        </summary>
+        <nav class="header-popover section-menu" aria-label="Guide sections">
+          <button type="button" data-focus="start">Start</button>
+          <button type="button" data-focus="external">External grants</button>
+          <button type="button" data-focus="iitd">IITD packet</button>
+          <button type="button" data-focus="advance">Visa + advance</button>
+          <button type="button" data-focus="travel">Travel</button>
+          <button type="button" data-focus="claim">Claim</button>
+        </nav>
+      </details>
+
       <nav class="jump-nav jump-nav-left" aria-label="Start, external grant, and IITD areas">
         <button type="button" data-focus="start">Start</button>
         <button type="button" data-focus="external">External grants</button>
@@ -50,6 +65,20 @@
             <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5a7 7 0 1 1-6.3 4H3.5A9 9 0 1 0 12 3V0L7 4l5 4V5Z"/></svg>
           </button>
         </div>
+
+        <details class="header-menu header-menu-tools">
+          <summary aria-label="Open canvas tools">
+            <span class="menu-symbol menu-symbol-dots" aria-hidden="true">•••</span>
+            <span class="menu-label">Tools</span>
+          </summary>
+          <div class="header-popover tools-menu" aria-label="Canvas tools">
+            <button type="button" data-action="zoom-out"><span aria-hidden="true">−</span> Zoom out</button>
+            <button type="button" data-action="zoom-in"><span aria-hidden="true">+</span> Zoom in</button>
+            <button type="button" data-action="fit"><span aria-hidden="true">⛶</span> Fit canvas</button>
+            <button type="button" data-action="toggle-checklist"><span aria-hidden="true">✓</span> Checklist</button>
+            <button type="button" data-action="reset-layout"><span aria-hidden="true">↻</span> Reset layout</button>
+          </div>
+        </details>
       </div>
     </header>
 
@@ -64,18 +93,18 @@
       <aside id="sidePanel" class="side-panel" aria-label="Reference checklist and sources" aria-hidden="true">
         <div class="panel-section">
           <p class="kicker">Working checklist</p>
-          <h2>Do not lose evidence</h2>
+          <h2>Documents to keep</h2>
           <p class="panel-note">
-            This checklist is deliberately procedural. Tick items as you collect proof; it is saved in this browser.
+            Tick items as you collect them. Your progress is saved in this browser.
           </p>
           <div id="checklist"></div>
         </div>
 
         <div class="panel-section">
           <p class="kicker">Sources</p>
-          <h2>Official first, peer notes second</h2>
+          <h2>Sources and forms</h2>
           <p class="panel-note">
-            Rules change. Treat this guide as a map, then verify every amount, form, route, and deadline from the linked IITD/agency pages.
+            Rules and forms can change. Check every amount, route, and deadline against the linked official pages before submitting.
           </p>
           <div id="sources"></div>
         </div>
@@ -88,10 +117,10 @@
 
     <footer class="statusbar" aria-live="polite">
       <span id="zoomLabel">Zoom 100%</span>
-      <span>Drag blank canvas to pan. Drag cards to rearrange; edges follow.</span>
+      <span>Drag the blank canvas to pan. Drag a card to move it. The lines move with the cards.</span>
       <a href="sources/how-to-apply-iitd-international-travel-grant.txt">Extracted HSS guide text</a>
     </footer>
 
-    <script src="script.js?v=20260828b"></script>
+    <script src="script.js?v=20260828d"></script>
   </body>
 </html>

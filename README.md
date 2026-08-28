@@ -2,25 +2,25 @@
 
 This site is a field guide for IIT Delhi PhD students trying to use the Research Scholar Travel Award (RSTA) for international academic travel.
 
-I built this after going through the paperwork myself. The hardest part was not any single form. It was understanding how IIT Delhi approval, Ex-India leave, external travel-grant applications, organizer letters, airfare estimates, and reimbursement evidence fit together. A missing phrase in an invitation letter or a payment made before approval can create an avoidable delay.
+I built this after going through the paperwork myself. The forms were manageable once I understood how IIT Delhi approval, Ex-India leave, external travel-grant applications, organizer letters, airfare estimates, and reimbursement fit together. Small things, such as a missing phrase in the invitation letter or paying before approval, can delay the process.
 
-## What Problem This Solves
+## What the guide covers
 
 The RSTA process is spread across several offices, forms, and external agencies. Students often need to know:
 
-- what evidence the organizer letter should contain;
-- why two external travel-grant applications matter;
-- how ANRF ITS and CSIR Travel Grant packets fit into the IITD workflow;
-- when Ex-India leave and Academic Section approval become blockers;
-- which Academic Section NOC and bonafide certificates support the visa application;
-- how the optional TA advance of up to Rs. 90,000 fits after travel sanction;
-- how a forex card, minimum emergency cash, and a backup payment method can make travel money easier to manage;
-- what original receipts, payment proof, external-funding decisions, and boarding passes must be preserved for reimbursement;
+- what the organizer letter should contain
+- why two external travel-grant applications matter
+- how ANRF ITS and CSIR Travel Grant fit into the IITD process
+- when you need Ex-India leave and Academic Section approval
+- which NOC and bonafide certificates I used for the visa application
+- how I applied for a TA advance after receiving the travel sanction
+- how I used a forex card, some emergency cash, and a backup card while travelling
+- which bills, payment records, external-funding decisions, and boarding passes I submitted for reimbursement
 - why the T.A. reimbursement claim must be submitted within 15 days of completing the journey.
 
-The website turns that sequence into an infinite-canvas workflow. Each card explains one stage, the relationship edges show dependencies, and the checklist keeps the practical evidence requirements visible while you prepare the packet.
+The site lays out the process on an infinite canvas. Each card covers one stage. The connecting lines show what needs to happen first, and the checklist helps you keep track of the documents.
 
-## How To Use The Site
+## How to use the site
 
 Start from the acceptance-evidence card, then move left to right:
 
@@ -28,18 +28,18 @@ Start from the acceptance-evidence card, then move left to right:
 2. Apply to two external travel-grant sources and preserve submission proof.
 3. Prepare the IITD RSTA and Ex-India leave packet.
 4. Wait for the Academic Section notification before making risky payments.
-5. Collect the visa NOC and bonafide certificate; optionally apply for TA advance after sanction.
-6. Arrange travel money: consider a forex card for convenience, carry only a small cash backup, and keep another payment method where possible.
+5. Collect the visa NOC and bonafide certificate. Apply for a TA advance after sanction if you need one.
+6. Arrange your travel money. A forex card is convenient, but keep some emergency cash and another payment method too.
 7. Keep travel and reimbursement evidence organized from the beginning.
 8. Submit the T.A. reimbursement form and its indexed evidence packet within 15 days of completing the journey.
 
-The document shelf links official PDFs, blank printable templates, and redacted examples. Treat the examples as layout and wording aids, not as official rules.
+The document shelf links official PDFs, blank printable templates, and redacted examples. Use the examples to understand the layout and wording. Check the current official documents before submitting anything.
 
-## Current Source Policy
+## Sources
 
 Last updated: August 2026.
 
-Always verify the latest IIT Delhi, ANRF, and CSIR forms before submission. The official IITD/ANRF/CSIR documents override this guide. Peer notes are included only because they capture practical routing and reimbursement lessons that are easy to miss in formal documents.
+Check the latest IIT Delhi, ANRF, and CSIR forms before submitting anything. Follow the official documents whenever they differ from this guide. I included peer notes because they explain some of the office routing and reimbursement steps that the formal documents leave out.
 
 ## Local Preview
 
