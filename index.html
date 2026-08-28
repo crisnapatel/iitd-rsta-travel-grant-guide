@@ -9,17 +9,15 @@
       name="description"
       content="A practical canvas guide for IIT Delhi PhD students applying for RSTA, ANRF ITS, CSIR travel grant, Ex-India leave, visa support documents, TA advance, and reimbursement."
     >
-    <link rel="stylesheet" href="styles.css?v=20260828a">
+    <link rel="stylesheet" href="styles.css?v=20260828b">
   </head>
   <body>
     <header class="topbar" aria-label="Guide controls">
-      <div class="brand">
-        <span class="brand-mark" aria-hidden="true">RSTA</span>
-        <div>
-          <h1>IITD international travel grant guide</h1>
-          <p>RSTA, external grants, leave, travel evidence, reimbursement</p>
-        </div>
-      </div>
+      <nav class="jump-nav jump-nav-left" aria-label="Start, external grant, and IITD areas">
+        <button type="button" data-focus="start">Start</button>
+        <button type="button" data-focus="external">External grants</button>
+        <button type="button" data-focus="iitd">IITD packet</button>
+      </nav>
 
       <div class="search-wrap">
         <svg aria-hidden="true" viewBox="0 0 24 24">
@@ -28,31 +26,30 @@
         <input id="search" type="search" placeholder="Search forms, approvals, reimbursement..." autocomplete="off">
       </div>
 
-      <nav class="jump-nav" aria-label="Jump to a canvas area">
-        <button type="button" data-focus="start">Start</button>
-        <button type="button" data-focus="external">External grants</button>
-        <button type="button" data-focus="iitd">IITD packet</button>
-        <button type="button" data-focus="advance">Visa + advance</button>
-        <button type="button" data-focus="travel">Travel</button>
-        <button type="button" data-focus="claim">Claim</button>
-      </nav>
+      <div class="topbar-right">
+        <nav class="jump-nav jump-nav-right" aria-label="Travel and claim areas">
+          <button type="button" data-focus="advance">Visa + advance</button>
+          <button type="button" data-focus="travel">Travel</button>
+          <button type="button" data-focus="claim">Claim</button>
+        </nav>
 
-      <div class="control-group" aria-label="Canvas zoom controls">
-        <button type="button" class="icon-button" data-action="zoom-out" aria-label="Zoom out" title="Zoom out">
-          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 11h14v2H5z"/></svg>
-        </button>
-        <button type="button" class="icon-button" data-action="zoom-in" aria-label="Zoom in" title="Zoom in">
-          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M11 5h2v6h6v2h-6v6h-2v-6H5v-2h6z"/></svg>
-        </button>
-        <button type="button" class="icon-button" data-action="fit" aria-label="Fit canvas" title="Fit canvas">
-          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h7v2H7.4l4.1 4.1-1.4 1.4L6 7.4V11H4V4Zm9 0h7v7h-2V7.4l-4.1 4.1-1.4-1.4L16.6 6H13V4ZM4 13h2v3.6l4.1-4.1 1.4 1.4L7.4 18H11v2H4v-7Zm14 0h2v7h-7v-2h3.6l-4.1-4.1 1.4-1.4 4.1 4.1V13Z"/></svg>
-        </button>
-        <button type="button" class="icon-button" data-action="toggle-checklist" aria-label="Toggle checklist" aria-controls="sidePanel" aria-expanded="false" title="Toggle checklist">
-          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 3h12a2 2 0 0 1 2 2v16H4V5a2 2 0 0 1 2-2Zm0 2v14h12V5H6Zm9.2 3.3 1.4 1.4-4.8 4.8-2.4-2.4 1.4-1.4 1 1 3.4-3.4ZM8 8h3v2H8V8Zm0 7h8v2H8v-2Z"/></svg>
-        </button>
-        <button type="button" class="icon-button" data-action="reset-layout" aria-label="Reset card layout" title="Reset card layout">
-          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5a7 7 0 1 1-6.3 4H3.5A9 9 0 1 0 12 3V0L7 4l5 4V5Z"/></svg>
-        </button>
+        <div class="control-group" aria-label="Canvas zoom controls">
+          <button type="button" class="icon-button" data-action="zoom-out" aria-label="Zoom out" title="Zoom out">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 11h14v2H5z"/></svg>
+          </button>
+          <button type="button" class="icon-button" data-action="zoom-in" aria-label="Zoom in" title="Zoom in">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M11 5h2v6h6v2h-6v6h-2v-6H5v-2h6z"/></svg>
+          </button>
+          <button type="button" class="icon-button" data-action="fit" aria-label="Fit canvas" title="Fit canvas">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h7v2H7.4l4.1 4.1-1.4 1.4L6 7.4V11H4V4Zm9 0h7v7h-2V7.4l-4.1 4.1-1.4-1.4L16.6 6H13V4ZM4 13h2v3.6l4.1-4.1 1.4 1.4L7.4 18H11v2H4v-7Zm14 0h2v7h-7v-2h3.6l-4.1-4.1 1.4-1.4 4.1 4.1V13Z"/></svg>
+          </button>
+          <button type="button" class="icon-button" data-action="toggle-checklist" aria-label="Toggle checklist" aria-controls="sidePanel" aria-expanded="false" title="Toggle checklist">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 3h12a2 2 0 0 1 2 2v16H4V5a2 2 0 0 1 2-2Zm0 2v14h12V5H6Zm9.2 3.3 1.4 1.4-4.8 4.8-2.4-2.4 1.4-1.4 1 1 3.4-3.4ZM8 8h3v2H8V8Zm0 7h8v2H8v-2Z"/></svg>
+          </button>
+          <button type="button" class="icon-button" data-action="reset-layout" aria-label="Reset card layout" title="Reset card layout">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5a7 7 0 1 1-6.3 4H3.5A9 9 0 1 0 12 3V0L7 4l5 4V5Z"/></svg>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -95,6 +92,6 @@
       <a href="sources/how-to-apply-iitd-international-travel-grant.txt">Extracted HSS guide text</a>
     </footer>
 
-    <script src="script.js?v=20260828a"></script>
+    <script src="script.js?v=20260828b"></script>
   </body>
 </html>

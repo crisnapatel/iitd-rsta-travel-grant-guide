@@ -3,6 +3,7 @@ const CANVAS_PADDING = 900;
 let WORLD = { ...BASE_WORLD };
 
 const colors = {
+  title: "#235b4f",
   start: "#2f7b68",
   risk: "#b6493c",
   external: "#326b92",
@@ -13,6 +14,16 @@ const colors = {
 };
 
 const nodes = [
+  {
+    id: "canvas-title",
+    kind: "title",
+    phase: "title",
+    x: 1650,
+    y: 20,
+    w: 960,
+    title: "IITD international travel grant guide",
+    body: "What I learned while using RSTA for a 2026 trip to Newcastle University"
+  },
   {
     id: "start",
     phase: "start",
@@ -44,12 +55,12 @@ const nodes = [
     body:
       "Use the current RSTA guidelines first. The 18 Nov 2025 guidelines say full-time PhD scholars may get support up to Rs. 2,00,000, subject to standing, comprehensive completion, five-year registration window, and presentation at a reputed conference.",
     bullets: [
-      "RSTA application proof: attach evidence that you have applied to two external travel-grant agencies; if a rejection/decision has already arrived, attach that too.",
+      "Attach proof that you applied to two external travel-grant agencies. If a decision or rejection has already arrived, attach that too.",
       "Responses from external sponsors, if any, are submitted with reimbursement claims.",
-      "RSTA is not framed for training schools/workshops; do not assume a poster at a school will be treated like a regular conference paper."
+      "RSTA is not framed for training schools or workshops. Do not assume a poster at a school will be treated like a regular conference paper."
     ],
     callout:
-      "Practical rule: if your case is non-standard, get written organizer evidence and ask the Academic Section before spending money.",
+      "If your case is unusual, get written organizer evidence and ask the Academic Section before spending money.",
     links: [
       { label: "RSTA guidelines PDF", href: "assets/pdfs/rsta-guidelines-18nov25.pdf", target: "_blank" },
       { label: "HSS peer guide PDF", href: "assets/pdfs/how-to-apply-iitd-international-travel-grant.pdf", target: "_blank" }
@@ -64,7 +75,7 @@ const nodes = [
     eyebrow: "Parallel work",
     title: "Apply to two external travel grants",
     bodyHtml:
-      'Do this in parallel with IITD paperwork. RSTA requires proof that you applied to two external agencies, or proof of decisions/rejections if they have already arrived. This guide is based on a 2026 IIT Delhi Chemical Engineering PhD workflow; I used ANRF ITS and CSIR Travel Grant as the two external applications. For more options, see this <a href="https://docs.google.com/spreadsheets/d/19BSz7_LxOOZt9heQeNKxG1ubPoZTs3FokLg4w8LZjRY/edit?gid=0#gid=0" target="_blank" rel="noopener">external funding options sheet</a>.',
+      'Do this in parallel with the IITD paperwork. RSTA asks for proof that you applied to two external agencies, or their decisions if you already received them. For my 2026 application, I used ANRF ITS and the CSIR Travel Grant. You can find more options in this <a href="https://docs.google.com/spreadsheets/d/19BSz7_LxOOZt9heQeNKxG1ubPoZTs3FokLg4w8LZjRY/edit?gid=0#gid=0" target="_blank" rel="noopener">external funding options sheet</a>.',
     bullets: [
       "Save portal acknowledgement, reference number, submitted PDF, and email receipts.",
       "For physical/postal submissions, keep a stamped receiving copy or Speed Post receipt.",
@@ -88,14 +99,14 @@ const nodes = [
     body:
       "ANRF ITS is portal-based. The blocker is usually not typing the form; it is obtaining documents in the exact language the portal expects.",
     bullets: [
-      "Acceptance/invitation should show candidate name, abstract title, and mode of presentation.",
+      "The acceptance or invitation should show your name, abstract title, and mode of presentation.",
       {
         html:
           'Prepare <a href="assets/pdfs/anrf-event-benefits-example-redacted.pdf" target="_blank" rel="noopener">event benefits</a>, event details, abstract, <a href="assets/pdfs/anrf-applicant-certificate-blank.pdf" target="_blank" rel="noopener">certificate by applicant</a>, DOB proof, and <a href="assets/pdfs/anrf-other-support-declaration-blank.pdf" target="_blank" rel="noopener">other-support declaration</a>.'
       },
       {
         html:
-          'Head of institution endorsement may be a specific IITD Academic Unit certificate, not a department-forwarded letter. On <a href="https://academics.iitd.ac.in/downloads/" target="_blank" rel="noopener">IITD downloads</a>, look for the editable DOCX named "Template for Endorsment Certificate"; the blank printable template below is only a layout reference.'
+          'Head of institution endorsement may require a specific IITD Academic Unit certificate instead of a department-forwarded letter. On <a href="https://academics.iitd.ac.in/downloads/" target="_blank" rel="noopener">IITD downloads</a>, look for the editable DOCX named "Template for Endorsment Certificate". The blank printable template below is only a layout reference.'
       }
     ],
     callout:
@@ -172,7 +183,7 @@ const nodes = [
       "The exact route differs by department, but the approval logic is stable: supervisor recommendation, Head of Academic Unit approval, then Academic Section notification.",
     bullets: [
       "Ask the department office where your packet is expected to enter.",
-      "Check the next DRC timing early; this meeting schedule can dominate the delay.",
+      "Check the next DRC timing early. This meeting schedule can cause most of the delay.",
       "Record the dispatch/dak/serial tracking number assigned to the file.",
       "Keep a scan/photocopy of the signed packet before it leaves your hands.",
       "If there is no update after the expected window, go in person to the relevant office with the tracking number."
@@ -210,7 +221,7 @@ const nodes = [
     eyebrow: "Visa support",
     title: "Get NOC + bonafide from Academic Section",
     body:
-      "In this 2026 workflow, the visa application needed two additional signed IITD certificates. Both were uploaded with the visa application and carried to the biometrics appointment as supporting evidence.",
+      "For my 2026 UK trip, I needed two extra signed certificates from IITD. I uploaded both with the visa application and carried them to the biometrics appointment.",
     bullets: [
       {
         html:
@@ -220,7 +231,7 @@ const nodes = [
         html:
           '<a href="assets/pdfs/iitd-visa-bonafide-blank-template.pdf" target="_blank" rel="noopener">IITD bonafide certificate</a>: blank Academic Section-style template confirming current full-time PhD registration and recording that the certificate is issued for the visa to attend the named event.'
       },
-      "Use the exact travel window on the NOC; it can be wider than the event dates because it covers the full approved stay abroad.",
+      "Use the exact travel window on the NOC. It can be wider than the event dates because it covers the full approved stay abroad.",
       "Check spelling, entry number, department, event title, city/country, and every date before leaving the counter."
     ],
     callout:
@@ -241,11 +252,11 @@ const nodes = [
     body:
       "After the RSTA/PMRF international-travel sanction and Ex-India leave approval are available, you can submit the TA Advance form to Accounts. This is an advance against approved travel expenditure, not extra funding.",
     bullets: [
-      "Attach the travel sanction/notification and a copy of the Ex-India leave approval; the form explicitly asks for both.",
+      "Attach the travel sanction or notification and a copy of the Ex-India leave approval. The form asks for both.",
       "Budget heads include fare, hotel, daily allowance, registration, medical insurance, visa, conveyance, and other approved costs.",
-      "The practical maximum used in this 2026 workflow is ₹90,000; confirm the current admissible amount and routing with Accounts before submission.",
+      "I received a ₹90,000 advance. Confirm the current limit and routing with Accounts before you submit the form.",
       "Settle the advance within 15 days after completing the return journey. Return any unspent balance, or the full amount if the trip is cancelled or not undertaken.",
-      "Delayed settlement/refund can attract penal interest; preserve the e-ticket and boarding passes for the final claim."
+      "A delayed settlement or refund can attract penal interest. Keep the e-ticket and boarding passes for the final claim."
     ],
     callout:
       "Do not treat the ₹90,000 advance as a separate entitlement. Every rupee must be supported and adjusted in the final travel claim.",
@@ -269,11 +280,11 @@ const nodes = [
       "Save the forex purchase/loading receipt, exchange-rate evidence, and forex-card statement or transaction record.",
       "Original boarding passes for all onward, return, and connecting flights.",
       "Registration, visa, insurance, flight, accommodation, food, local travel, and other receipts.",
-      "Bank/card statements showing electronic payments; highlight the relevant lines.",
+      "Keep bank or card statements for electronic payments and highlight the relevant lines.",
       "Proof of presentation or participation certificate from the organizer."
     ],
     callout:
-      "First-hand example, July 2026: I obtained a forex card from the SBI branch on the IIT Delhi campus and loaded £200 for a UK trip. That amount was my personal starting balance, not a recommended amount for every traveller."
+      "I got a forex card from the SBI branch on the IIT Delhi campus in July 2026 and loaded £200 for my UK trip. That was my starting balance, not a recommended amount for everyone."
   },
   {
     id: "claim",
@@ -284,20 +295,20 @@ const nodes = [
     eyebrow: "Return",
     title: "Submit the reimbursement claim within 15 days",
     body:
-      "The IITD T.A. Reimbursement/Settlement Form says the claim must be properly filled and submitted within 15 days of completing the journey. Do not wait for a reminder: in this 2026 case, Accounts followed up around day 12–13, leaving very little time to cure missing evidence.",
+      "The IITD T.A. Reimbursement/Settlement Form says you must submit the completed claim within 15 days of finishing the journey. Do not wait for a reminder. In my case, Accounts followed up only around day 12 or 13, which left very little time to fix anything missing.",
     bullets: [
       "Fill the T.A. reimbursement form, list the advance already drawn, group expenses by category, and count the enclosures.",
       "Ex-India leave and travel grant approval notifications.",
       "Two external-funding rejection/decision letters or the documents requested by Accounts for those applications.",
-      "Payment proof—normally the relevant bank/card statement lines—for accommodation, visa, flight, registration, and other electronic payments.",
+      "Attach payment proof for accommodation, visa, flights, registration, and other electronic payments. This normally means the relevant lines from your bank or card statement.",
       "Original registration, hotel/stay, poster-printing, visa-fee, food, and local-travel bills. Airport transfers can include the trip to Delhi airport and the arrival transfer abroad.",
       "Original boarding passes, especially the return boarding pass, together with the e-ticket/PNR and flight payment proof.",
-      "Here, ‘original’ means the bill or receipt as issued to you. If the issuer supplied only a digital document, print that file; do not substitute a photocopy of a paper original.",
+      "Here, ‘original’ means the bill or receipt as issued to you. If the issuer supplied only a digital document, print that file. Do not substitute a photocopy of a paper original.",
       "Arrange bills on A4 sheets where required and add a tabulated attachment index with page numbers.",
-      "Keep the reimbursement date range aligned with IITD rules; it may differ from conference dates, duty leave, personal leave, and full Ex-India travel dates."
+      "Keep the reimbursement date range aligned with IITD rules. It may differ from the conference dates, duty leave, personal leave, and full Ex-India travel dates."
     ],
     callout:
-      "Completed 2026 case: after a ₹90,000 advance, the remaining ₹1,10,000 was reimbursed, completing the full ₹2,00,000 support. Treat these amounts as this author’s outcome, not a guarantee for every claim.",
+      "I received ₹90,000 as an advance and ₹1,10,000 after the claim was processed, so I received the full ₹2,00,000. Your approved amount may be different.",
     links: [
       { label: "Fillable T.A. reimbursement form", href: "assets/pdfs/iitd-travel-reimbursement-form.pdf", target: "_blank" }
     ]
@@ -387,7 +398,7 @@ const nodes = [
     eyebrow: "Failure modes",
     title: "The mistakes that cost time",
     body:
-      "Most delays are not scientific; they are document mismatches. Design your packet so a clerk can verify it without calling you.",
+      "Most delays come from document mismatches. Arrange the packet so Accounts can verify it without having to call you.",
     bullets: [
       "Organizer letter says accepted, but not abstract title or presentation mode.",
       "RSTA says two external agencies, but you only saved a draft, not submitted proof.",
@@ -434,7 +445,7 @@ const checklist = [
   {
     title: "Acceptance evidence",
     items: [
-      "Organizer letter/email names candidate, event, dates, venue, and presentation mode.",
+      "Organizer letter or email names you, the event, dates, venue, and presentation mode.",
       "Abstract title and author list are visible in the letter or attached accepted abstract.",
       "Event website, brochure, timetable, or announcement saved as PDF."
     ]
@@ -465,14 +476,14 @@ const checklist = [
     items: [
       "Forex card availability, supported currency, exchange rate, fees, reloading, and emergency support confirmed.",
       "Forex purchase/loading receipt and card transaction records saved.",
-      "A small amount of emergency cash packed separately; the full travel budget is not being carried in cash.",
+      "A small amount of emergency cash packed separately. The full travel budget is not being carried in cash.",
       "A second usable payment method kept as backup where possible."
     ]
   },
   {
     title: "After return",
     items: [
-      "T.A. reimbursement claim submitted within 15 days of completing the journey; not postponed until an Accounts reminder.",
+      "T.A. reimbursement claim submitted within 15 days of completing the journey, without waiting for an Accounts reminder.",
       "Advance drawn recorded and deducted in the claim form.",
       "Two external-funding rejection/decision documents attached if requested.",
       "Original boarding passes retained.",
@@ -519,7 +530,7 @@ const sources = [
     title: "IITD Application Form for TA Advance",
     type: "Local form",
     href: "assets/pdfs/rsta-ta-advance-form-public.pdf",
-    note: "Two-page form used after travel sanction. The older peer guide and this 2026 workflow use an optional advance up to ₹90,000; verify current Accounts practice."
+    note: "Two-page form used after travel sanction. I received an optional ₹90,000 advance in 2026. Check the current limit and process with Accounts."
   },
   {
     title: "IITD T.A. Reimbursement/Settlement Form",
@@ -619,6 +630,16 @@ function renderRichText(value) {
 function renderNodes() {
   nodeLayer.innerHTML = nodes.map((node) => {
     const accent = colors[node.phase] || colors.docs;
+    if (node.kind === "title") {
+      return `
+        <article class="node canvas-title-node" id="node-${escapeHtml(node.id)}" data-id="${escapeHtml(node.id)}" data-phase="${escapeHtml(node.phase)}"
+          aria-label="Guide title. Drag to move." style="--x:${node.x}px; --y:${node.y}px; --w:${node.w}px; --accent:${accent}">
+          <div class="canvas-title-content">
+            <h1>${escapeHtml(node.title)}</h1>
+            <p>${escapeHtml(node.body)}</p>
+          </div>
+        </article>`;
+    }
     const bullets = node.bullets
       ? `<ul>${node.bullets.map((item) => `<li>${renderRichText(item)}</li>`).join("")}</ul>`
       : "";
@@ -1107,4 +1128,4 @@ renderSources();
 renderMiniMap();
 initEvents();
 setPanelOpen(false);
-focusNode("start");
+fitCanvas();

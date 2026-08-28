@@ -52,34 +52,13 @@ a {
   right: 0;
   min-height: 72px;
   display: grid;
-  grid-template-columns: minmax(270px, 1fr) minmax(260px, 420px) auto auto;
-  gap: 14px;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 420px) minmax(0, 1fr);
+  gap: 10px;
   align-items: center;
   padding: 10px 14px;
   background: rgba(251, 250, 245, 0.92);
   border-bottom: 1px solid rgba(207, 216, 212, 0.8);
   backdrop-filter: blur(14px);
-}
-
-.brand {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  min-width: 0;
-}
-
-.brand-mark {
-  display: inline-grid;
-  width: 48px;
-  height: 48px;
-  place-items: center;
-  border: 2px solid var(--ink);
-  border-radius: var(--radius);
-  background: #fff;
-  color: var(--green-dark);
-  font-size: 12px;
-  font-weight: 850;
-  letter-spacing: 0;
 }
 
 h1,
@@ -95,7 +74,6 @@ h1 {
   letter-spacing: 0;
 }
 
-.brand p,
 .panel-note,
 .statusbar {
   color: var(--muted);
@@ -104,6 +82,7 @@ h1 {
 }
 
 .search-wrap {
+  width: 100%;
   height: 44px;
   display: grid;
   grid-template-columns: 22px 1fr;
@@ -135,6 +114,18 @@ h1 {
   display: flex;
   gap: 6px;
   align-items: center;
+}
+
+.jump-nav-left {
+  justify-self: end;
+}
+
+.topbar-right {
+  min-width: 0;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-self: start;
 }
 
 .jump-nav button,
@@ -259,6 +250,39 @@ h1 {
 .node.dragging {
   z-index: 12;
   box-shadow: 0 28px 80px rgba(27, 35, 31, 0.2);
+}
+
+.canvas-title-node {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+  color: var(--ink);
+  cursor: grab;
+  text-align: center;
+}
+
+.canvas-title-node.dragging {
+  box-shadow: none;
+  cursor: grabbing;
+}
+
+.canvas-title-content {
+  padding: 12px 24px;
+}
+
+.canvas-title-node h1 {
+  font-size: 48px;
+  line-height: 1.04;
+  letter-spacing: -0.025em;
+}
+
+.canvas-title-node p {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.35;
 }
 
 .node-head {
@@ -645,6 +669,21 @@ body.panel-open .minimap {
     position: sticky;
     grid-template-columns: 1fr;
     min-height: auto;
+  }
+
+  .search-wrap {
+    grid-row: 1;
+  }
+
+  .jump-nav-left {
+    grid-row: 2;
+    justify-self: stretch;
+  }
+
+  .topbar-right {
+    grid-row: 3;
+    width: 100%;
+    overflow-x: auto;
   }
 
   .jump-nav {

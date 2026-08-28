@@ -2,7 +2,7 @@
 
 This site is a field guide for IIT Delhi PhD students trying to use the Research Scholar Travel Award (RSTA) for international academic travel.
 
-I built it after going through the paperwork myself. The difficult part was not one single form; it was understanding the dependencies between IIT Delhi approval, Ex-India leave, external travel-grant applications, organizer letters, airfare estimates, and later reimbursement evidence. A missing phrase in an invitation letter or a payment made before approval can create avoidable delay.
+I built this after going through the paperwork myself. The hardest part was not any single form. It was understanding how IIT Delhi approval, Ex-India leave, external travel-grant applications, organizer letters, airfare estimates, and reimbursement evidence fit together. A missing phrase in an invitation letter or a payment made before approval can create an avoidable delay.
 
 ## What Problem This Solves
 
