@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "created": "2026-05-06",
-  "last_updated": "2026-07-15",
+  "last_updated": "2026-08-28",
   "purpose": "Machine-readable source register for the IITD travel grant GitHub Pages guide.",
   "official_links": [
     {
@@ -37,6 +37,11 @@
       "date": "2026-07-14",
       "title": "SBI IIT Delhi campus forex card",
       "role": "First-hand author experience: obtained a forex card at the SBI branch on the IIT Delhi campus and loaded GBP 200 for an upcoming UK trip. The amount is an example, not a recommendation; future readers should verify current availability, exchange rates, fees, supported currencies, reloading, and emergency support with the branch."
+    },
+    {
+      "date": "2026-08-28",
+      "title": "Completed IITD RSTA reimbursement",
+      "role": "First-hand author outcome after the Newcastle University trip: the claim included original or issuer-supplied digital bills for registration, accommodation, poster printing, visa, food, and airport transfers, plus payment evidence. Accounts requested two external-funding rejection/decision documents, bank-statement payment proof, and the original return boarding pass. An INR 90,000 advance plus INR 110,000 final settlement completed INR 200,000 reimbursement. The author observed a reminder around day 12-13, but readers should submit within the form's 15-day deadline rather than rely on a reminder."
     }
   ],
   "local_source_files": [
@@ -92,6 +97,16 @@
       "local_pdf_path": "../assets/pdfs/rsta-ta-advance-form-public.pdf",
       "pages": 2,
       "status": "local IITD form scan; public copy flattened with source signature redacted"
+    },
+    {
+      "title": "IITD T.A. Reimbursement/Settlement Form",
+      "source_path": "../../../dropped-files/IITD-Travel-Reimbursement-Form.pdf",
+      "original_local_filename": "IITD-Travel-Reimbursement-Form.pdf",
+      "local_pdf_path": "../assets/pdfs/iitd-travel-reimbursement-form.pdf",
+      "preview_image_path": "../assets/doc-previews/iitd-travel-reimbursement-form-page1.png",
+      "sha256": "24654c11fe62090f211a6bbb96ea397eb1031b07f1f16ee31728272c5afa3669",
+      "pages": 2,
+      "status": "unmodified interactive form downloaded from the IITD Academics downloads webpage"
     }
   ],
   "generated_public_examples": [

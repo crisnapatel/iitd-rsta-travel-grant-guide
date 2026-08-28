@@ -282,19 +282,25 @@ const nodes = [
     y: 1900,
     w: 540,
     eyebrow: "Return",
-    title: "Reimbursement packet",
+    title: "Submit the reimbursement claim within 15 days",
     body:
-      "The older IITD peer guide says to apply for reimbursement within 15 days of return. Verify current timing, then submit a clean packet quickly.",
+      "The IITD T.A. Reimbursement/Settlement Form says the claim must be properly filled and submitted within 15 days of completing the journey. Do not wait for a reminder: in this 2026 case, Accounts followed up around day 12–13, leaving very little time to cure missing evidence.",
     bullets: [
-      "Travel Allowance/RSTA claim form with expenses grouped by category.",
+      "Fill the T.A. reimbursement form, list the advance already drawn, group expenses by category, and count the enclosures.",
       "Ex-India leave and travel grant approval notifications.",
-      "External grant responses or proof/receipts if responses have not arrived.",
-      "Original bills pasted or arranged on A4 sheets, self-attested where required.",
-      "A tabulated attachment index with page numbers.",
+      "Two external-funding rejection/decision letters or the documents requested by Accounts for those applications.",
+      "Payment proof—normally the relevant bank/card statement lines—for accommodation, visa, flight, registration, and other electronic payments.",
+      "Original registration, hotel/stay, poster-printing, visa-fee, food, and local-travel bills. Airport transfers can include the trip to Delhi airport and the arrival transfer abroad.",
+      "Original boarding passes, especially the return boarding pass, together with the e-ticket/PNR and flight payment proof.",
+      "Here, ‘original’ means the bill or receipt as issued to you. If the issuer supplied only a digital document, print that file; do not substitute a photocopy of a paper original.",
+      "Arrange bills on A4 sheets where required and add a tabulated attachment index with page numbers.",
       "Keep the reimbursement date range aligned with IITD rules; it may differ from conference dates, duty leave, personal leave, and full Ex-India travel dates."
     ],
     callout:
-      "After submitting, track the file. Delays often happen because one bill, statement, or proof is not easy for Accounts to verify."
+      "Completed 2026 case: after a ₹90,000 advance, the remaining ₹1,10,000 was reimbursed, completing the full ₹2,00,000 support. Treat these amounts as this author’s outcome, not a guarantee for every claim.",
+    links: [
+      { label: "Fillable T.A. reimbursement form", href: "assets/pdfs/iitd-travel-reimbursement-form.pdf", target: "_blank" }
+    ]
   },
   {
     id: "documents",
@@ -305,7 +311,7 @@ const nodes = [
     eyebrow: "Documents shelf",
     title: "Keep source documents and templates visible",
     body:
-      "Last updated July 2026. This shelf mixes official PDFs, extracted text, blank printable templates, and redacted examples used in this guide. Before submitting, verify that IITD, ANRF, and CSIR have not changed the current forms.",
+      "Last updated August 2026. This shelf mixes official PDFs, extracted text, blank printable templates, and redacted examples used in this guide. Before submitting, verify that IITD, ANRF, and CSIR have not changed the current forms.",
     docs: [
       {
         image: "assets/doc-previews/iitd-howto-page1.png",
@@ -361,6 +367,11 @@ const nodes = [
         image: "assets/doc-previews/rsta-ta-advance-form-page1.png",
         href: "assets/pdfs/rsta-ta-advance-form-public.pdf",
         caption: "Two-page IITD TA Advance form; signature in the source scan is redacted."
+      },
+      {
+        image: "assets/doc-previews/iitd-travel-reimbursement-form-page1.png",
+        href: "assets/pdfs/iitd-travel-reimbursement-form.pdf",
+        caption: "Fillable IITD T.A. Reimbursement/Settlement Form, preserved as downloaded from IITD. Its instructions require submission within 15 days of completing the journey."
       }
     ],
     links: [
@@ -461,8 +472,11 @@ const checklist = [
   {
     title: "After return",
     items: [
+      "T.A. reimbursement claim submitted within 15 days of completing the journey; not postponed until an Accounts reminder.",
+      "Advance drawn recorded and deducted in the claim form.",
+      "Two external-funding rejection/decision documents attached if requested.",
       "Original boarding passes retained.",
-      "Registration, visa, insurance, flight, hotel, food, local travel, and forex receipts arranged.",
+      "Original registration, visa, insurance, flight, hotel, food, poster-printing, local-travel, and forex receipts arranged.",
       "Bank/card statements printed and relevant transactions highlighted.",
       "Participation/presentation certificate collected.",
       "Attachment index with page numbers prepared before submission."
@@ -506,6 +520,12 @@ const sources = [
     type: "Local form",
     href: "assets/pdfs/rsta-ta-advance-form-public.pdf",
     note: "Two-page form used after travel sanction. The older peer guide and this 2026 workflow use an optional advance up to ₹90,000; verify current Accounts practice."
+  },
+  {
+    title: "IITD T.A. Reimbursement/Settlement Form",
+    type: "Local IITD form",
+    href: "assets/pdfs/iitd-travel-reimbursement-form.pdf",
+    note: "Two-page fillable form preserved as downloaded from IITD. Its printed instructions require a properly completed claim within 15 days of completing the journey, with tickets/PNR and boarding passes for air travel."
   },
   {
     title: "Akhil Abburu IITD RSTA guide",
